@@ -88,22 +88,4 @@ $(document).ready(function() {
 		$('.leftBet3').addClass('grayscale');
 		$('.score3').addClass('on');
 	});
-	
-	
-	// 응모하기 버튼 클릭시 확인 알림
-	$('#prdBtn1').on('click',function(){
-		alert('응모 완료');
-	});
-	$('#prdBtn2').on('click',function(){
-		alert('응모 완료');
-	});
-	$('#prdBtn3').on('click',function(){
-		alert('응모 완료');
-	});
-	$('#prdBtn4').on('click',function(){
-		alert('응모 완료');
-	});
-	$('#prdBtn5').on('click',function(){
-		alert('응모 완료');
-	});
 });

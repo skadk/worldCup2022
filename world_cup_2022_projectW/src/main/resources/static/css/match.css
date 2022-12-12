@@ -246,40 +246,4 @@ body {
 	background-color:black;
 }
 
-/* ===================================================== */
-/* Product */
 
-#productBox {
-	width:1280px;
-	height:500px;
-	background:white;
-	padding-top:20px;
-	border-radius:10px;
-}
-
-#productBox .product {
-	width:1280px;
-	margin-top:50px;
-	margin-right:100px;
-}
-
-#productBox .product div {
-	display:inline-block;
-	width:200px;
-	height:200px;
-	border:solid 1px #ccc;
-	margin:10px;
-}
-
-#productBox .product div img {
-	width:100%;
-	height:100%;
-}
-
-#need {
-	color:blue;
-}
-
-#prdheader {
-	margin-top:20px;
-}
