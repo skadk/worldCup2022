@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#bottomLogoBox {
+	width: 1920px;
+	color: white;
+	height: 80px;
+	background-color: grey;
+}
+
+#bottomMenuItem p {
+	float: left;
+	width: 13%;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+#bottomLogoBox p:first-child {
+	margin-left: 300px;
+}
+
+#bottomLogoBox a img {
+	float: left;
+	margin-left: 20px;
+}

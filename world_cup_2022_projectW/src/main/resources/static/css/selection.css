@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+#slideShow {
+	position: relative;
+	background-color: #fff;
+	height: 520px;
+	border-bottom: solid #ccc 1px;
+}
+
+#slideShowBox {
+	width: 1920px;
+	height: 711px;
+	text-align: center;
+	overflow: hidden; /* 영역 벗어나면 숨김 */
+}
+
+#slidePanel {
+	position: relative;
+	width: 5760px;
+	height: 711px;
+}
+
+.slideImage {
+	float: left;
+	width: 1920px;
+	height: 711px;
+}
+
+/* prev / next 버튼 */
+#prevNextButtonBox {
+	position: relative;
+	z-index: 10;
+}
+
+#prevButton {
+	position: absolute;
+	top: 210px;
+	left: 4%;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#nextButton {
+	position: absolute;
+	top: 210px;
+	right: 4%;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#prevButton:hover {
+	opacity: 1;
+}
+
+#nextButton:hover {
+	opacity: 1;
+}
+
+#controlButtonBox {
+	margin: 0 auto;
+	width: 160px;
+}
+
+#controlButtonBox img {
+	float: left;
+	margin: 10px;
+}
+
+#message {
+	width: 1920px;
+	font-weight: bolder;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	background-color: #600;
+	margin-top: 225px;
+}
+
+#match1 {
+	height: 132px;
+	background-color: #AD4747;
+	border: 1px solid #600;
+}
+
+#kr1 {
+	margin-top: 15px;
+	margin-right: 290px;
+	position: relative;
+}
+
+#matchschedule {
+	color: white;
+	margin-top: -97px;
+	margin-left: -125px;
+	position: relative;
+}
+
+#cheer {
+	margin-right: -254px;
+	margin-top: -78px;
+	border-radius: 2em;
+}
+
+#match2 {
+	height: 132px;
+	background-color: #AD4747;
+	border: 1px solid #600;
+}
+
+#match3 {
+	height: 132px;
+	background-color: #AD4747;
+	border: 1px solid #600;
+}
+
+#matchday {
+	margin-top: -86px;
+	margin-right: -219px;
+	color: white;
+}
+
+/* menu.css */
+#menuItem {
+	margin-top: 0;
+	padding: 0;
+	list-style: none; /* type 없음 */
+	line-height: 80px;
+	margin-left: 111px;;
+}
+
+#posrit {
+	width: 1920px;
+	height: 436px;
+	background-color: #AD4747;
+}
+
+#posritimg {
+	margin-left: 51px;
+}
+
+#best11 {
+	margin-left: 283px;
+	margin-top: -152px;
+}
+
+#cheerph {
+	margin-left: 553px;
+	margin-top: -152px;
+}

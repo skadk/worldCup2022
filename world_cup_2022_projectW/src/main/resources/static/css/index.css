@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* index.css */
+
+/********** Header   *************/
+
+
+#logoBox {
+	float:left;
+	height:80px;
+	line-height:80px;
+}
+
+/*************메인메뉴 고정*****************/
+
+.mainMenuFixed{
+	
+	width:1920px;
+	position:fixed;
+	top:0px;
+}
+
+
+

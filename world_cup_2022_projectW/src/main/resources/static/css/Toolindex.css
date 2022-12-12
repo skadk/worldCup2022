@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+ul {
+	margin-top: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	background-color: #f0f0f0;
+	background-image: url("../image/background_korea.jpg");
+	background-attachment: fixed;
+}
+
+#mainIndexBox {
+	background-color: #800;
+	height: 80px;
+	line-height: 80px;
+	z-index: 30;
+	width: 100%;
+}
+
+#mainIndexBox img {
+	float: left;
+	margin-left: 20px;
+}
+
+#mainIndexBox ul {
+	margin: 0;
+}
+
+#mainIndexBox ul li a {
+	float: left;
+	text-align: center;
+	width: 15%;
+	height: 80px;
+	line-height: 80px;
+}
+
+#mainIndexBox ul li a:first-child {
+	width: 15%;
+}
+
+#mainIndexBox ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.mainIndexFixed {
+	position: fixed;
+	top: 0px;
+}
