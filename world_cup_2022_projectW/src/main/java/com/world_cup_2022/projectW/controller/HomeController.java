@@ -17,4 +17,10 @@ public class HomeController {
 		
 		return "match";
 	}
+	
+	@RequestMapping("/cheerwall")
+	public String cheerBox() {
+		
+		return "cheerWall";
+	}
 }
