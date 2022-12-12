@@ -9,7 +9,7 @@
 					<li><a href='Sub1.html'>한국대표팀 소개</a></li>
 					<li><a href='cheerWall.html'>응원 담벼락</a></li>
 					<li><a href='match.html'>승부 예측</a></li>
-					<li><a href='signup.html'>회원가입</a></li>
+					<li><a href=''>회원가입</a></li>
 					<li><a href='login.html'>로그인</a></li>
 				</ul>
 			</div>
