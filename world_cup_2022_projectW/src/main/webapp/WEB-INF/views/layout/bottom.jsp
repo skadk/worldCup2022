@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 			<footer>
 				<div id="bottomLogoBox">
-					<a href="mainindex.html"><img src="<c:url value='/image/logo.png'/>"></a>
+					<a href="<c:url value="/mainindex"/>"><img src="<c:url value='/image/logo.png'/>"></a>
 					<div id="bottomMenuItem">
 						<p>고객센터</p>
 						<p>광고문의</p>
