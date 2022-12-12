@@ -11,4 +11,10 @@ public class HomeController {
 		
 		return "mainindex";
 	}
+	// match 페이지 열기
+	@RequestMapping("/match")
+	public String match() {
+		
+		return "match";
+	}
 }
