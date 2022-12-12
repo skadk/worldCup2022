@@ -11,4 +11,10 @@ public class HomeController {
 		
 		return "mainindex";
 	}
+	
+	@RequestMapping("/cheerwall")
+	public String cheerBox() {
+		
+		return "cheerWall";
+	}
 }
