@@ -80,15 +80,18 @@
 						<a><b>2022.12.3.토 00:00</b></a>
 					</div>
 				</div>
-				<div id="posrit">
-					<a href="match.html"><img src="../image/kr.jpg" id="posritimg"></a>
+				<div id="pic">
+				<div id="postit">
+					<a href="<c:url value='/match'/>"><img src="../image/kr.jpg" id="postitimg"></a>
 				</div>
 				<div id="best11">
-					<a href="Sub1.html"><img src="../image/베스트11.jpg" id="best11"></a>
+					<a href="<c:url value='/Sub1'/>"><img src="../image/베스트11.jpg" id="best11"></a>
 				</div>
 				<div id="cheerph">
-					<a href="cheerWall.html"><img src="../image/트로피3.jpg" id="cheerph"style="max-width: 100%; height: auto;"></a>
+					<a href="<c:url value='/cheerWall'/>"><img src="../image/트로피3.jpg" id="cheerph"style="max-width: 100%; height: auto;"></a>
 				</div>
+				</div>
+				
 			</section>
 			<!-- bottom -->
             <c:import url="/WEB-INF/views/layout/bottom.jsp"/>
