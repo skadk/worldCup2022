@@ -9,4 +9,3 @@
 		<script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
 		<script src="<c:url value='/js/slideShow.js'/>"></script>
 		<script src="<c:url value='/js/mainMenuFixed.js'/>"></script>
-		
