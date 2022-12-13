@@ -18,48 +18,48 @@
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
 			<div class="wrap">
 				<div id="signUp">
-					<form name="signUpForm" id="signUpForm">
+					<form name="signUpForm" id="signUpForm" method="post"  action="<c:url value='/member/insert'/>">
 						<h1>회원 가입</h1>
 						<br>
 						<h4>* 아이디</h4>
-						<span class="input_area"><input type="text" maxlength="13" name="userId" id="userId"></span>
+						<span class="input_area"><input type="text" maxlength="13" name="memId" id="memId"></span>
 						<button type="button" id="idCheck">중복확인</button>
 						<br><br>
 						<h4>* 비밀번호</h4>
-						<span class="input_area"><input type="password" maxlength="15" name="userPwd" id="userPwd" 
+						<span class="input_area"><input type="password" maxlength="15" name="memPwd" id="memPwd" 
 						placeholder="영문자+숫자+특수문자 조합"></span>
 						<br><br>
 						
 						<h4>* 비밀번호 확인</h4>
-						<span class="input_area"><input type="password" maxlength="15" name="userPwd2" id="userPwd2"></span>
+						<span class="input_area"><input type="password" maxlength="15" name="memPwd2" id="memPwd2"></span>
 						<label id="pwdResult"></label>
 						<br><br>
 						
 						<h4>* 이름</h4>
-						<span class="input_area"><input type="text" maxlength="5" name="userName" id="userName"></span>
+						<span class="input_area"><input type="text" maxlength="5" name="memName" id="memName"></span>
 						<br><br>
 						
 						<h4>연락처</h4>
-						<span class="input_area"><input type="tel" maxlength="11" name="phone" id="phone"
+						<span class="input_area"><input type="tel" maxlength="11" name="memHP" id="memHP"
 						placeholder="ex) 01012345678"></span>
 						<br><br>
 											
 						<h4>이메일</h4>
-						<span class="input_area"><input type="email" name="email" id="email"></span>
+						<span class="input_area"><input type="email" name="memEmail" id="memEmail"></span>
 						<br><br>
 						
 						<h4>* 우편번호</h4>
-						<span class="input_area"><input type="text" name="address" class="postcodify_postcode" id="postcode"
+						<span class="input_area"><input type="text" name="memZipcode" class="postcodify_postcode" id="memZipcode"
 						readonly></span>
 						<button type="button" id="postcodify_search_button">검색</button>
 						<br><br>
 						
 						<h4>도로명주소</h4>
-						<span class="input_area"><input type="text" name="address" class="postcodify_address" readonly></span>
+						<span class="input_area"><input type="text" name="memAddress1" class="postcodify_address" id="memAddress1" readonly></span>
 						<br><br>
 						
 						<h4>상세주소</h4>
-						<span class="input_area"><input type="text" name="address" class="postcodify_details"></span>
+						<span class="input_area"><input type="text" name="memAddress2" class="postcodify_details" id="memAddress2"></span>
 						
 						<div class="btnArea">
 							<button type="button" id="joinBtn" onclick="signupCheck();">가입하기</button>

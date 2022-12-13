@@ -12,12 +12,6 @@ import com.world_cup_2022.projectW.service.MatchService;
 public class MatchController {
 	@Autowired
 	private MatchService service;
-	
-	@RequestMapping("/menu/match")
-	public String match() {
-
-		return "menu/match";
-	}
 
 	// 승부예측 추가
 	@RequestMapping("/match/insert")
