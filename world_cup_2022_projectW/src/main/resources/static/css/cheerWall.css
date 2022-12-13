@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* cheerBox.css */
+/* cheerWall.css */
 
 * { margin:0 auto; }
 
@@ -23,7 +23,7 @@ body {
 
 section {
 	background-color:#fefefe;
-	width:840px;
+	width:1200px;
 	height:964px;
 }
 
@@ -142,7 +142,7 @@ section {
 	left:0;
 	z-index:10;
     box-shadow:0 15px 35px rgba(0, 0, 0, 0.2);
-    margin-left:20px;
+    margin-left:200px;
 }
 
 #wallBox #wall img {	

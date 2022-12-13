@@ -40,10 +40,10 @@
 	$('.controlButton').each(function(index){		
 		$(this).hover(
 			function() {    // 마우스 올렸을 때 이미지 변경
-				$(this).attr('src', '../image/controlButton2.png');
+				$(this).attr('src', '/image/controlButton2.png');
 			},
 			function() {
-				$(this).attr('src', '../image/controlButton1.png');
+				$(this).attr('src', '/image/controlButton1.png');
 			}
 		);
 		
@@ -53,11 +53,3 @@
 		})
 	});
  });
- 
- 
- 
- 
- 
- 
- 
- 
