@@ -12,9 +12,27 @@ public class HomeController {
 		return "mainindex";
 	}
 	
-	@RequestMapping("/cheerwall")
+	@RequestMapping("/cheerWall")
 	public String cheerBox() {
 		
 		return "cheerWall";
+	}
+	
+	@RequestMapping("/match")
+	public String match() {
+		
+		return "match";
+	}
+	
+	@RequestMapping("/signUp")
+	public String signUp() {
+		
+		return "signUp";
+	}
+	
+	@RequestMapping("/login")
+	public String login() {
+		
+		return "login";
 	}
 }

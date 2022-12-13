@@ -15,7 +15,7 @@
 		<div id="wrap">
 			<!-- top -->
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
-			<div id="headerBox">
+			<div id="matchHeaderBox">
 			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;승부 예측&nbsp;&nbsp;&nbsp;잔여 포인트 : 0</div>
 		</div>
 		<div id="mainTabBox">

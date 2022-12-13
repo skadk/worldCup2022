@@ -2,7 +2,8 @@
 
 .wrap {
 	width: 700px;
-	background: rgb(248, 249, 250);
+	text-align: left; 
+	background : rgb( 248, 249, 250);
 	margin: auto;
 	margin-top: 70px;
 	margin-bottom: 70px;
