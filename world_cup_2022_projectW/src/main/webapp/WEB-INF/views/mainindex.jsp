@@ -77,7 +77,7 @@
 					</div>
 					<div id="matchday">
 						<a><b>Education City Stadium</b></a><br><br><br>
-						<a><b>2022.12.3.토 00:00</b></a>
+						<a><b>2022.12.3.토 00:20</b></a>
 					</div>
 				</div>
 				<div id="pic">
