@@ -35,7 +35,7 @@
 	
 	// (새기기) 버튼 클릭 시 태극기 이미지의 랜덤한 영역에 랜덤한 색으로 randombox클래스의 div로 sentence의 내용 추가
 	$('.btnWrite').on('click', function() {
-		$('#message').append("<div class='randomBox'>"+sentence+"</div>");
+		$('#cheerMessage').append("<div class='randomBox'>"+sentence+"</div>");
 		
 		// 버튼을 다시 누를 시 추가한 sentence 다시 추가하지 않기 위해 내용 초기화
 		sentence = "";
@@ -43,8 +43,8 @@
 		// 객체의 css에 랜덤한 좌표값과 랜덤한 색 지정
 		$('.randomBox').each(function() {
 			$(this).css({
-				left:Math.random()*($('#message').width()-$(this).width()),
-				top:Math.random()*($('#message').height()-$(this).height()),
+				left:Math.random()*($('#cheerMessage').width()-$(this).width()),
+				top:Math.random()*($('#cheerMessage').height()-$(this).height()),
 				color:"#"+Math.round(Math.random()*0xffffff).toString(16)
 			});
 		});

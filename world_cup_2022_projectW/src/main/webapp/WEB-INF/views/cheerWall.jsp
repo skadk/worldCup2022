@@ -71,7 +71,7 @@
 				</article>
 				<article id="wallBox">
 					<div id="wall">
-						<div id="message">
+						<div id="cheerMessage">
 						</div>
 						<img src="<c:url value='/image/태극기.png'/>" id="flag">
 					</div>
@@ -80,7 +80,7 @@
 			<footer>
 				<!-- bottom -->
 	            <c:import url="/WEB-INF/views/layout/bottom.jsp"/>
-				<div id="BottomlogoBox">
+<%-- 				<div id="BottomlogoBox">
             		<a href="index.html"><img src="<c:url value='/image/logo.png'/>" id="logoImg"></a>
             		<ul id="BottommenuItem">
                 		<li>고객센터</li>
@@ -89,7 +89,7 @@
                 		<li>개인정보처리방침</li>
                 		<li> ⓒ 우승해조 Corp.</li>
             		</ul>
-        		</div>
+        		</div> --%>
 				<div id="bottomFix">
 					<img src="<c:url value='/image/멘트4.png'/>" id="lastMent">
 					<!-- <h1>태극기에 새겨진 모든 응원이 선수들에게 힘이 됩니다!</h1> -->

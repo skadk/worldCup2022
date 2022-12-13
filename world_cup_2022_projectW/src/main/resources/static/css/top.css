@@ -41,6 +41,10 @@
 	color: white;
 }
 
+#topMenuBox a:visited {
+	color: white;
+}
+
 #topMenuBox a:hover {
 	color: black;
 }

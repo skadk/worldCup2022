@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* common.css */
+
 * {
 	margin: 0 auto;
 }
@@ -12,8 +13,9 @@
 	position: relative;
 }
 
+/* 배경 */
 body {
 	background-color: #f0f0f0;
-	background-image: url("<c:url value='/image/background_korea.jpg'>");
+	background-image: url("/image/background_korea.jpg");
 	background-attachment: fixed;
 }
