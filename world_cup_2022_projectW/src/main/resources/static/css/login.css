@@ -20,6 +20,10 @@ body {
 	background-color: #f0f0f0;
 }
 
+#loginForm h4 {
+    text-align: left;
+}
+
 .loginbox {
 	width: 780px;
 	height: 550px;

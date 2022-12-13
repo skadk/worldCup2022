@@ -18,18 +18,24 @@ public class HomeController {
 		return "menu/cheerWall";
 	}
 
+	@RequestMapping("/menu/match")
+	public String match() {
+
+		return "menu/match";
+	}
+
 	@RequestMapping("/member/signUp")
 	public String signUp() {
 
 		return "member/signUp";
 	}
-
+	
 	@RequestMapping("/member/login")
 	public String login() {
 
 		return "member/login";
 	}
-
+	
 	@RequestMapping("/menu/korTeam")
 	public String korTeam() {
 
