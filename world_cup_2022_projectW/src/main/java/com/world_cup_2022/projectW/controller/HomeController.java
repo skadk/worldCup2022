@@ -12,33 +12,27 @@ public class HomeController {
 		return "mainIndex";
 	}
 
-	@RequestMapping("/cheerWall")
+	@RequestMapping("/menu/cheerWall")
 	public String cheerBox() {
 
-		return "cheerWall";
+		return "menu/cheerWall";
 	}
 
-	@RequestMapping("/match")
-	public String match() {
-
-		return "match";
-	}
-
-	@RequestMapping("/signUp")
+	@RequestMapping("/member/signUp")
 	public String signUp() {
 
-		return "signUp";
+		return "member/signUp";
 	}
 
-	@RequestMapping("/login")
+	@RequestMapping("/member/login")
 	public String login() {
 
-		return "login";
+		return "member/login";
 	}
-	
-	@RequestMapping("/korTeam")
+
+	@RequestMapping("/menu/korTeam")
 	public String korTeam() {
 
-		return "korTeam";
+		return "menu/korTeam";
 	}
 }

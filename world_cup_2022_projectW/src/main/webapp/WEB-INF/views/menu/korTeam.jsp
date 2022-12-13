@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>대표팀 소개</title>
 			<!--  head -->         
         	<c:import url="/WEB-INF/views/layout/head.jsp" />
 		<script src="../js/Sub1.js"></script>
