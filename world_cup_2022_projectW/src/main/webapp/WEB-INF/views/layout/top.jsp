@@ -7,8 +7,8 @@
 					<a href="<c:url value='/'/>"><img src="<c:url value='/image/logo.png'/>"></a>
 				</div>
 				<div id="topMenuBox">
-					<a href="<c:url value='/member/loginForm'/>">로그인</a>
-					<a href="<c:url value='/member/joinForm'/>">회원가입</a>
+					<a href="<c:url value='login'/>">로그인</a>
+					<a href="<c:url value='signUp'/>">회원가입</a>
 					<a href="<c:url value='/member/myPage'/>">마이 페이지</a>
 					<a href="<c:url value='/member/cart'/>">장바구니</a>
 				</div>

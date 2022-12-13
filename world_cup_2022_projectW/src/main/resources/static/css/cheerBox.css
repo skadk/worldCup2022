@@ -11,7 +11,7 @@ body {
 
 #wrap {
 	width:1920px;
-	height:1194px;
+	height:1214px;
 	margin:0 auto;
 	position:relative;
 	text-align:center;
@@ -122,7 +122,7 @@ section {
 	margin-bottom:55px;
 }
 
-#message {
+#cheerMessage {
 	width:800px;
 	height:534px;
 	font-size:20px;

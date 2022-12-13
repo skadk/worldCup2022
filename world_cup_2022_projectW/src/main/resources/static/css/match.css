@@ -190,7 +190,7 @@ body {
 /* ===================================================== */
 /* Menu */
 
-#headerBox {	/* header 텍스트 박스 */
+#matchHeaderBox {	/* header 텍스트 박스 */
 	width:1280px;
 	height:30px;
 	line-height:30px;
@@ -199,7 +199,7 @@ body {
 	position:relative;
 }
 
-#headerBox div {	/* header 박스 안의 text */
+#matchHeaderBox div {	/* header 박스 안의 text */
 	float:center;
 	font-weight:bold;
 	color:white;
