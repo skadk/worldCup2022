@@ -11,9 +11,3 @@
 	text-align: center;
 	position: relative;
 }
-
-body {
-	background-color: #f0f0f0;
-	background-image: url("<c:url value='/image/background_korea.jpg'>");
-	background-attachment: fixed;
-}
