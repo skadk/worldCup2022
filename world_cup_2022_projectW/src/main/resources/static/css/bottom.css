@@ -1,24 +1,29 @@
 @charset "UTF-8";
 
-#bottomLogoBox {
+#bottomBox {
 	width: 1920px;
 	color: white;
-	height: 80px;
+	height: 100px;
 	background-color: grey;
 }
 
-#bottomMenuItem p {
+#bottomBox a img {
 	float: left;
-	width: 13%;
-	margin-top: 30px;
+	margin-top: 10px;
+	margin-left: 23px;
+}
+
+#bottomMenuBox {
+	height: 100px;
+	margin-left: 305px;
+	margin-right: 215px;
+}
+
+#bottomMenuBox p {
+	font-size: 20px;
+	float: left;
+	width: 20%;
+	height: 30px;
+	margin-top: 35px;
 	cursor: pointer;
-}
-
-#bottomLogoBox p:first-child {
-	margin-left: 300px;
-}
-
-#bottomLogoBox a img {
-	float: left;
-	margin-left: 20px;
 }
