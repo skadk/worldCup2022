@@ -8,10 +8,10 @@
 		<title>Insert title here</title>
 			<!--  head -->         
         	<c:import url="/WEB-INF/views/layout/head.jsp" />
-<script src="../js/Sub1.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/Sub1.css">
-</head>
-<body>
+		<script src="../js/Sub1.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/Sub1.css">
+	</head>
+	<body>
 	<div id="wrap">
 			<!--  top -->         
         	<c:import url="/WEB-INF/views/layout/top.jsp" />
