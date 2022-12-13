@@ -8,31 +8,37 @@ public class HomeController {
 	// index 페이지 열기
 	@RequestMapping("/")
 	public String index() {
-		
-		return "mainindex";
+
+		return "mainIndex";
 	}
-	
+
 	@RequestMapping("/cheerWall")
 	public String cheerBox() {
-		
+
 		return "cheerWall";
 	}
-	
+
 	@RequestMapping("/match")
 	public String match() {
-		
+
 		return "match";
 	}
-	
+
 	@RequestMapping("/signUp")
 	public String signUp() {
-		
+
 		return "signUp";
 	}
-	
+
 	@RequestMapping("/login")
 	public String login() {
-		
+
 		return "login";
+	}
+	
+	@RequestMapping("/korTeam")
+	public String korTeam() {
+
+		return "korTeam";
 	}
 }

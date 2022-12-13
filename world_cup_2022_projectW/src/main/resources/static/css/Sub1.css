@@ -264,34 +264,3 @@ body {
 	margin-right: 70px;
 	margin-top:20px;
 }
-
-.mainMenuFixed {
-	position: fixed;
-	top: 80px;
-}
-
-.mainMenuShadow {
-	box-shadow: 0 0px 5px 5px black;
-}
-#BottomlogoBox {
-    width:1280px;
-    color: white;
-    height: 80px;
-    background-color: #a2a2f7;
-    margin-top:132px;
-}
-
-#BottomlogoBox ul li{
-	cursor:pointer; 
-    float:left;
-    width:15%;
-    margin-top:30px;
-}
-
-#BottomlogoBox ul li:first-child {
-    margin-left:150px;
-}
-
-#BottomlogoBox a img {
-    float:left;
-}
