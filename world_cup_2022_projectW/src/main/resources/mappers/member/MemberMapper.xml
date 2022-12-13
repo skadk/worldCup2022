@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.world_cup_2022.projectW.dao.IMemberDAO">
+  	
+  	<!-- 로그인 체크 : id/pwd 여러 개를 파라미터로 받아올 때는 hashmap 사용해야 함 -->
+  	
+  	<!-- 암호화 이후 -->
+  	<select id="loginCheck" parameterType="string" resultType="string">
+  		SELECT memPwd FROM member WHERE memId=#{id}
+  	</select>
+  	
+  	<!-- 회원 등록 -->
+  	<insert id="insertMember">
+  		insert into member(memId, memPwd, memName, memHP, memEmail, memZipcode, memAddress1, memAddress2, memPoint)
+  		values(#{memId},#{memPwd},#{memName},#{memHP},#{memEmail},#{memZipcode},#{memAddress1},#{memAddress2},3000)
+  	</insert>
+  </mapper>
