@@ -32,12 +32,17 @@
 		<div id='mainBetContainer'>
 			<div class='mainBet show'>
 				<img src="<c:url value="/image/background.jpg"/>" width='1280' height='840'>
-				<div class='draw1'></div>
-				<div class='drawtext'>트로피 선택 시 무승부</div>
-				<div class='reset'><button class='resetBtn1'>초기화</button></div>
+				<div class='draw1'>
+				</div>
+				<div class='drawtext'>
+					트로피 선택 시 무승부
+				</div>
+				<div class='reset'>
+					<button class='resetBtn1'>초기화</button>
+				</div>
 				
 				<div class='leftBet1'>
-					<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br> 
+					<button id="bet1" value="1"><img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'></button><br>
 					<img src="<c:url value="/image/KoreaFB.jpg"/>" width='100' height='100'><br>
 					<h3>대한민국</h3>
 					<b class='score1'>45%</b>

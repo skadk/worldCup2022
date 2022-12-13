@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>한국 대표팀 우승해조</title>
+		<title>응원 담벼락</title>
 		<!-- head -->
 		<c:import url="/WEB-INF/views/layout/head.jsp"/>
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/cheerBox.css'/>">
