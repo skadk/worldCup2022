@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/common.css'/>">
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/selection.css'/>">
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/bottom.css'/>">
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/top.css'/>">
 		<link rel="icon" href="<c:url value='/image/대표팀2.png'/>" type="image/x-icon" sizes="16x16">

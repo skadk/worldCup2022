@@ -8,8 +8,8 @@
 		<title>응원 담벼락</title>
 		<!-- head -->
 		<c:import url="/WEB-INF/views/layout/head.jsp"/>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/cheerBox.css'/>">
-		<script src="<c:url value='/js/cheerBox.js'/>"></script>
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/cheerWall.css'/>">
+		<script src="<c:url value='/js/cheerWall.js'/>"></script>
 	</head>
 	<body>
 		<div id="wrap">

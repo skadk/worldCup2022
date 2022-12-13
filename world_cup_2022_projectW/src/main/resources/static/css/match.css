@@ -1,249 +1,256 @@
 @charset "UTF-8";
 
-/* 메인화면 css */
+/* match.css */
 
-.mainBet {		/* 경기별 탭 상자 */
-	position:relative;
-	display:none;
+/* matchHeaderBox */
+
+/* 경기별 탭 상자 */
+.mainBet {
+	position: relative;
+	display: none;
 }
 
-.show {		/* jQuery addClass를 이용해서 mainBet탭을 보여줌 */
-	position:relative;
-	display:block;
+.show { /* jQuery addClass를 이용해서 mainBet탭을 보여줌 */
+	position: relative;
+	display: block;
 }
 
-.grayscale img {	/* jQuery addClass를 이용해서 흑백 및 블러 효과 */
+.grayscale img { /* jQuery addClass를 이용해서 흑백 및 블러 효과 */
 	-webkit-filter: blur(2px) grayscale(90%);
 	filter: blur(2px) grayscale(90%);
 }
 
-.drawtext {		/* 안내 텍스트 */
-	top:60px;
-	left:860px;
-	position:absolute;
-	color:white;
-	font-weight:bold;
-	font-size:20px;
-	opacity:0.3;
+.drawtext { /* 안내 텍스트 */
+	top: 60px;
+	left: 860px;
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 0.3;
 }
 
-.reset {		/* 초기화 버튼 상자 */
-	top:20px;
-	left:930px;
-	position:absolute;
-	height:15px;
+.reset { /* 초기화 버튼 상자 */
+	top: 20px;
+	left: 930px;
+	position: absolute;
+	height: 15px;
 }
 
-.resetBtn1 {		/* 초기화 버튼 */
-	opacity:0.7;
+.resetBtn1 { /* 초기화 버튼 */
+	opacity: 0.7;
 }
+
 .resetBtn2 {
-	opacity:0.7;
+	opacity: 0.7;
 }
+
 .resetBtn3 {
-	opacity:0.7;
+	opacity: 0.7;
 }
 
-.draw1 {		/* 트로피를 누르면 무승부가 되기 위해 클릭 박스 생성 */
-	width:250px;
-	height:600px;
-	top:100px;
-	left:840px;
-	position:absolute;
-	cursor:pointer;
-}
-.draw2 {		/* 트로피를 누르면 무승부가 되기 위해 클릭 박스 생성 */
-	width:300px;
-	height:600px;
-	top:100px;
-	left:810px;
-	position:absolute;
-	cursor:pointer;
-}
-.draw3 {		/* 트로피를 누르면 무승부가 되기 위해 클릭 박스 생성 */
-	width:300px;
-	height:600px;
-	top:100px;
-	left:810px;
-	position:absolute;
-	cursor:pointer;
+.draw1 { /* 트로피를 누르면 무승부가 되기 위해 클릭 박스 생성 */
+	width: 250px;
+	height: 600px;
+	top: 100px;
+	left: 840px;
+	position: absolute;
+	cursor: pointer;
 }
 
-.leftBet1 {		/* mainBet1탭 안에서 왼쪽 팀 상자 */
-	left:0;
-	top:40px;
-	position:absolute;
-	margin-left:380px;
-	cursor:pointer;
+.draw2 { /* 트로피를 누르면 무승부가 되기 위해 클릭 박스 생성 */
+	width: 300px;
+	height: 600px;
+	top: 100px;
+	left: 810px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.draw3 { /* 트로피를 누르면 무승부가 되기 위해 클릭 박스 생성 */
+	width: 300px;
+	height: 600px;
+	top: 100px;
+	left: 810px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.leftBet1 { /* mainBet1탭 안에서 왼쪽 팀 상자 */
+	left: 0;
+	top: 40px;
+	position: absolute;
+	margin-left: 380px;
+	cursor: pointer;
 }
 
 .leftBet1 img {
-	border:solid 2px red;
+	border: solid 2px red;
 }
 
-.rightBet1 {	/* mainBet1탭 안에서 오른쪽 팀 상자 */
-	right:0;
-	top:40px;
-	position:absolute;
-	margin-right:380px;
-	cursor:pointer;
+.rightBet1 { /* mainBet1탭 안에서 오른쪽 팀 상자 */
+	right: 0;
+	top: 40px;
+	position: absolute;
+	margin-right: 380px;
+	cursor: pointer;
 }
 
 .rightBet1 img {
-	border:solid 2px skyblue;;
+	border: solid 2px skyblue;;
 }
 
-.leftBet2 {		/* mainBet2탭 안에서 왼쪽 팀 상자 */
-	left:0;
-	top:40px;
-	position:absolute;
-	margin-left:380px;
-	cursor:pointer;
+.leftBet2 { /* mainBet2탭 안에서 왼쪽 팀 상자 */
+	left: 0;
+	top: 40px;
+	position: absolute;
+	margin-left: 380px;
+	cursor: pointer;
 }
 
 .leftBet2 img {
-	border:solid 2px red;
+	border: solid 2px red;
 }
 
-.rightBet2 {	/* mainBet2탭 안에서 오른쪽 팀 상자 */
-	right:0;
-	top:40px;
-	position:absolute;
-	margin-right:380px;
-	cursor:pointer;
+.rightBet2 { /* mainBet2탭 안에서 오른쪽 팀 상자 */
+	right: 0;
+	top: 40px;
+	position: absolute;
+	margin-right: 380px;
+	cursor: pointer;
 }
 
 .rightBet2 img {
-	border:solid 2px white;
+	border: solid 2px white;
 }
 
-.leftBet3 {		/* mainBet3탭 안에서 왼쪽 팀 상자 */
-	left:0;
-	top:40px;
-	position:absolute;
-	margin-left:380px;
-	cursor:pointer;
+.leftBet3 { /* mainBet3탭 안에서 왼쪽 팀 상자 */
+	left: 0;
+	top: 40px;
+	position: absolute;
+	margin-left: 380px;
+	cursor: pointer;
 }
 
 .leftBet3 img {
-	border:solid 2px red;
+	border: solid 2px red;
 }
 
-.rightBet3 {	/* mainBet3탭 안에서 오른쪽 팀 상자 */
-	right:0;
-	top:40px;
-	position:absolute;
-	margin-right:380px;
-	cursor:pointer;
+.rightBet3 { /* mainBet3탭 안에서 오른쪽 팀 상자 */
+	right: 0;
+	top: 40px;
+	position: absolute;
+	margin-right: 380px;
+	cursor: pointer;
 }
 
 .rightBet3 img {
-	border:solid 2px green;
+	border: solid 2px green;
 }
 
-.mainBet h3 {		/* 나라 이름 */
-	color:white;
+.mainBet h3 { /* 나라 이름 */
+	color: white;
 }
-.mainBet b {		/* 배당 */
-	color:white;
+
+.mainBet b { /* 배당 */
+	color: white;
 }
 
 .score1 {
-	display:none;
+	display: none;
 }
+
 .score2 {
-	display:none;
+	display: none;
 }
+
 .score3 {
-	display:none;
+	display: none;
 }
 
 .on {
-	display:block;
+	display: block;
 }
 
 /* ===================================================== */
 /* common */
-
 #wrap {
-	width:1920px;
-	text-align:center;
-	position:relative;
+	width: 1920px;
+	text-align: center;
+	position: relative;
 }
 
 hr {
-	width:1280px;
+	width: 1280px;
 }
 
-* {margin:0 auto;}
+* {
+	margin: 0 auto;
+}
 
 ul {
-	margin-top:0;
-	padding:0;
-	list-style:none;
+	margin-top: 0;
+	padding: 0;
+	list-style: none;
 }
 
 body {
-	background-color:#f0f0f0;
+	background-color: #f0f0f0;
 }
 
 /* ===================================================== */
 /* Menu */
-
-#matchHeaderBox {	/* header 텍스트 박스 */
-	width:1280px;
-	height:30px;
-	line-height:30px;
-	padding:0;
-	background-color:#005;
-	position:relative;
+#matchHeaderBox { /* header 텍스트 박스 */
+	width: 1280px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0;
+	background-color: #005;
+	position: relative;
 }
 
-#matchHeaderBox div {	/* header 박스 안의 text */
-	float:center;
-	font-weight:bold;
-	color:white;
-	font-size:20px;
+#matchHeaderBox div { /* header 박스 안의 text */
+	float: center;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
 }
 
-#mainTabBox {		/* 경기별 Tab 박스 */
-	width:1280px;
-	height:50px;
-	background-color:#005;
-	position:relative;
+#mainTabBox { /* 경기별 Tab 박스 */
+	width: 1280px;
+	height: 50px;
+	background-color: #005;
+	position: relative;
 }
 
 #mainTabBox ul li {
-	float:left;
-	text-align:center;
-	width:33%;
-	height:50px;
-	line-height:50px;
-	text-decoration:none;
-	color:white;
-	font-size:18px;
-	font-weight:bold;
-	
+	float: left;
+	text-align: center;
+	width: 33%;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 #mainTabBox ul li img {
-	width:25px;
-	height:25px;
-	margin-top:15px;
-	position:absolute;
+	width: 25px;
+	height: 25px;
+	margin-top: 15px;
+	position: absolute;
 }
 
 #mainTabBox ul li:first-child {
-	width:33%;
-	margin-left:6px;
+	width: 33%;
+	margin-left: 6px;
 }
 
 #mainTabBox ul li:hover {
-	cursor:pointer;
+	cursor: pointer;
 }
 
-.active {		/* jQuery addClass를 이용해서 클릭 시 효과 */
-	background-color:black;
+.active { /* jQuery addClass를 이용해서 클릭 시 효과 */
+	background-color: black;
 }
-
-
