@@ -3,24 +3,88 @@
 /* top.css */
 
 /************** Header **************/
-
 #headerBox {
-	height: 80px;
-	line-height: 80px;
-	padding: 0;
+	background-color: #800;
+	width: 1920px;
+	height: 100px;
 }
 
+/************** LogoBox **************/
 #logoBox {
-	float:left;
-	height:80px;
-	line-height:80px;
+	float: left;
+	width: 90px;
+	height: 100px;
+}
+
+#logoBox a img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 23px;
+}
+
+/************** TopMenuBox **************/
+#topMenuBox {
+	width: 280px; float : right;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-right: 20px;
+	float: right; font-weight : bold; padding-top : 20px; padding-right :
+	20px;
+	font-size: 15px;
+}
+
+#topMenuBox a {
+	text-decoration-line: none;
+}
+
+#topMenuBox a:link {
+	color: white;
+}
+
+#topMenuBox a:hover {
+	color: black;
+}
+
+/************** MainMenuBox **************/
+#mainMenuBox {
+	background-color: #800;
+	height: 100px;
+	line-height: 80px;
+	z-index: 30;
+	width: 1920px;
+}
+
+#mainMenuItem {
+	width: 1530px;
+	height: 100px;
+	margin-left: 90px;
+}
+
+#mainMenuItem p {
+	float: left;
+	text-align: center;
+	width: 306px;
+	height: 100px;
+	line-height: 100px;
+}
+
+#mainMenuItem p a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#mainMenuItem a:link {
+	color: white;
+}
+
+#mainMenuItem a:hover {
+	color: black;
 }
 
 /************** 메인 메뉴 고정 **************/
-
 .mainMenuFixed {
-	position:fixed;
-	top:0px;
+	position: fixed;
+	top: 0px;
 }
-
-

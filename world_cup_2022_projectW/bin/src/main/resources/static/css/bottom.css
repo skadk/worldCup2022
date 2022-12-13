@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-/* bottom.css */
-
-/************** Footer **************/
 #bottomBox {
 	width: 1920px;
 	color: white;
@@ -29,8 +26,4 @@
 	height: 30px;
 	margin-top: 35px;
 	cursor: pointer;
-}
-
-#bottomMenuBox p:hover {
-	color: black;
 }

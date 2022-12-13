@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+body {
+	width: 1920px;
+}
+
+#position ul li a {
+	text-decoration: none;
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#position ul li {
+	display: inline-block;
+	text-align: center;
+	padding-right: 50px;
+}
+
+#position ul li:hover {
+	opacity: 0.5;
+}
+
+#position {
+	width: 1920px;
+	height: 90px; 
+	box-shadow: 0px 0px 5px 0px black;
+	font-size:50px;
+	margin: 0px;
+	background-color: orange;
+	border: solid 1px;
+}
+
+#positionmenu {
+	text-align: center;
+}
+
+#logoImg {
+	margin: 0;
+	float: left;
+	width: 100px;
+	height: 85px;
+	line-height: 100px;
+}
+#director {
+	font-size: 30px;
+	margin-left: 200px;
+}
+
+#bentoImg {
+	border-radius: 20px;
+	width: 400px;
+	height: 400px;
+	box-shadow: 0px 0px 5px 5px black;
+	margin-left: 150px;
+}
+
+.drtintroduce {
+	width: 600px;
+	text-align: left;
+	display: inline-block;
+	box-shadow: 0px 0px 5px 5px black;
+	font-weight: bold; font-size : 25px;
+	margin-left: 150px;
+	padding-left: 20px;
+	padding-top: 20px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: left;
+	background-color: black;
+	color:white;
+	border-radius: 20px;
+	font-size: 25px;
+}
+
+#listimg {
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px 5px blue;
+	height: 800px;
+	width: 700px;
+	margin-right: 200px;
+}
+
+#player .listimgscore {
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px 5px red;
+	display: inline-block;
+	height: 800px;
+	width: 700px;
+}
+
+#team {
+	margin-left: 800px;
+	width: 230px;
+	box-shadow: 0px 0px 5px 5px black;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 20px;
+	color: white;
+	background-color: black;
+}
+
+#teamlist {
+	border-radius: 20px;
+	width: 500px;
+	font-weight: bold;
+	font-size: 30px;
+	margin-right: 700px;
+	box-shadow: 0px 0px 5px 5px black;
+	color: red;
+	background-color: black;
+}
+
+#GK {
+	padding-top: 50px;
+}
+
+#GK .GKname div {
+	display: inline-block;
+	font-size: 30px;
+}
+
+#GK .GKname div img {
+	border-radius: 20px;
+	width: 200px;
+	height: 200px;
+	margin-right: 80px;
+	box-shadow: 0px 0px 5px 5px black;
+}
+
+#GK .GKname div img:hover {
+	box-shadow: 0px 0px 5px 5px blue;
+	display: block;
+}
+
+#DF .DFname div {
+	display: inline-block;
+}
+
+#DF .DFname div img:hover {
+	box-shadow: 0px 0px 5px 5px blue;
+	display: block;
+}
+
+#DF .DFname div img {
+	border-radius: 20px;
+	width: 200px;
+	height: 200px;
+	margin-right: 90px;
+	box-shadow: 0px 0px 5px 5px black;
+}
+
+#MF .MFname div {
+	display: inline-block;
+}
+
+#MF .MFname div img {
+	border-radius: 20px;
+	width: 200px;
+	height: 200px;
+	margin-right: 90px;
+	box-shadow: 0px 0px 5px 5px black;
+}
+
+#MF .MFname div img:hover {
+	box-shadow: 0px 0px 5px 5px blue;
+	display: block;
+}
+
+#FW .FWname div {
+	display: inline-block;
+}
+
+#FW .FWname div img {
+	border-radius: 20px;
+	width: 200px;
+	height: 200px;
+	margin-right: 90px;
+	box-shadow: 0px 0px 5px 5px black;
+}
+
+#FW .FWname div img:hover {
+	box-shadow: 0px 0px 5px 5px blue;
+	display: block;
+}
+
+#GK .krplayer {
+	color:white;
+	margin-right: 80px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#DF .krplayer {
+	color:white;
+	margin-right: 80px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#MF .krplayer {
+	color:white;
+	margin-right: 80px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#FW .krplayer {
+	color:white;
+	margin-right: 80px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#GK .GKname .krplayertext {
+	text-align: left;
+	box-shadow: 0px 0px 5px 5px black;
+	background-color: black;
+	border: 1px solid blue;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 5px;
+	color: #ffffff;
+	margin-right: 70px;
+	margin-top:20px;
+}
+
+#DF .DFname .krplayertext {
+	text-align: left;
+	box-shadow: 0px 0px 5px 5px black;
+	background-color: black;
+	border: 1px solid blue;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 5px;
+	color: #ffffff;
+	margin-right: 70px;
+	margin-top:20px;
+}
+
+#MF .MFname .krplayertext {
+	text-align: left;
+	box-shadow: 0px 0px 5px 5px black;
+	background-color: black;
+	border: 1px solid blue;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 5px;
+	color: #ffffff;
+	margin-right: 70px;
+	margin-top:20px;
+}
+
+#FW .FWname .krplayertext {
+	text-align: left;
+	box-shadow: 0px 0px 5px 5px black;
+	background-color: black;
+	border: 1px solid blue;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 5px;
+	color: #ffffff;
+	margin-right: 70px;
+	margin-top:20px;
+}
+
+.mainMenuFixed {
+	position: fixed;
+	top: 80px;
+}
+
+.mainMenuShadow {
+	box-shadow: 0 0px 5px 5px black;
+}
+#BottomlogoBox {
+    width:1280px;
+    color: white;
+    height: 80px;
+    background-color: #a2a2f7;
+    margin-top:132px;
+}
+
+#BottomlogoBox ul li{
+	cursor:pointer; 
+    float:left;
+    width:15%;
+    margin-top:30px;
+}
+
+#BottomlogoBox ul li:first-child {
+    margin-left:150px;
+}
+
+#BottomlogoBox a img {
+    float:left;
+}

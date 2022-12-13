@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/* cheerBox.css */
+
+* { margin:0 auto; }
+
+body {
+	background-color:#f0f0f0;
+	z-index:0;
+}
+
+#wrap {
+	width:1920px;
+	height:1194px;
+	margin:0 auto;
+	position:relative;
+	text-align:center;
+}
+
+/* ****************** HEADER ******************** */
+
+/* ****************** SECTION ******************** */
+
+section {
+	background-color:#fefefe;
+	width:840px;
+	height:964px;
+}
+
+/* ------------------ WORDBOX -------------------- */
+
+#wordBox {
+	width:822px;
+	height:325px;
+	padding:9px;
+}
+
+#ment {
+	width:800px;
+}
+ 
+#btnBox {
+	height:60px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.btn {
+	background-color:white;
+	display:inline-block;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0, 0, 0, 0.2);
+    padding:10px 20px;
+    text-decoration:none;
+    transition:0.25s;
+    font-family:"paybooc-Light", sans-serif;
+    font-size:20px;
+    font-weight:bold;
+	margin:2px;
+	margin-left:30px;
+	margin-right:30px;
+	width:348px;
+}
+
+.btnRandom-outline {
+    border:3px solid #FFB6C1;
+    color:black;
+}
+
+.btnRandom-outline:hover {
+    background-color:#FFB6C1;
+    color:white;
+}
+
+.btnWrite-outline {
+    border:3px solid #6aafe6;
+    color:black;
+}
+
+.btnWrite-outline:hover {
+    background-color:#6aafe6;
+    color:white;
+}
+
+#hiddenBox {
+	border: 5px inset #FFB6C1;
+	overflow:hidden;
+	height:50px;
+	line-height:50px;
+	font-size:0;
+    letter-spacing: 0;
+    word-spacing: 0;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.word2, .word3, .word4 {
+	border-left:4px dashed pink;	
+}
+
+.word {
+	background-color:white;
+	display:inline-block;
+	width:200px;
+	position:relative;
+}
+
+#wordBox .word p {
+	display:block;
+	font-size:28px;
+    font-weight:bold;
+	z-index:10;
+}
+
+/* ------------------ WALLBOX -------------------- */
+
+#wallBox {
+	background-color:white;
+	height:534px;
+	position:relative;
+	margin-top:20px;
+	margin-bottom:55px;
+}
+
+#message {
+	width:800px;
+	height:534px;
+	font-size:20px;
+	position:relative;
+	z-index:20;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-weight:bold;
+}
+
+#flag {
+	width:800px;
+	height:534px;
+	position:absolute;
+	opacity:0.6;
+	top:0;
+	left:0;
+	z-index:10;
+    box-shadow:0 15px 35px rgba(0, 0, 0, 0.2);
+    margin-left:20px;
+}
+
+#wallBox #wall img {	
+	border-radius:50px;
+}
+
+.randomBox {
+	border-radius:25px;
+	position:absolute;
+}
+
+/* ****************** FOOTER ******************** */
+
+#bottomFix h1 {
+	font-size:30px;
+}
+
+#bottomFix {
+	width:1920px;
+	height:50px;
+	background-color:white;
+	position:fixed;
+	bottom:0;
+	z-index:30;
+}
+
+#lastMent {
+	height:60px;
+}

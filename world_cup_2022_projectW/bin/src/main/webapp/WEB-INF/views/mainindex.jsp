@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>한국 대표팀 우승해조</title>
+		<title>Insert title here</title>
 		<!-- head -->
 		<c:import url="/WEB-INF/views/layout/head.jsp"/>
 	</head>
