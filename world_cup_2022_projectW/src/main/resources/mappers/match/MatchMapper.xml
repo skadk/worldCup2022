@@ -6,7 +6,33 @@
   <mapper namespace="com.world_cup_2022.projectW.dao.IMatchDAO">
   	<!-- 승부 예측 선택 -->
   	<insert id="insertChoice">
-  		INSERT INTO match_game(match1, match2, match3, memId)
-  		VALUES(#{match1}, #{match2}, #{match3}, #{memId})
+  		INSERT INTO match_game(matchNo, matchNation1, matchNation2, memId)
+  		VALUES(#{matchNo}, #{matchNation1}, #{matchNation2}, #{memId})
   	</insert>
+  	
+  	<!-- 동일 승부 예측 중복 확인 -->
+  	<select id="checkChoice" parameterType="hashmap" 
+  								resultType="int">
+	  	SELECT COUNT(*)
+	  	FROM match_game
+	  	WHERE matchNo=#{matchNo} AND memId=#{memId}							
+  	</select>
+  	
+  	<!-- 승부 예측 수정 -->
+  	<update id="updateChoice" parameterType="com.world_cup_2022.projectW.model.MatchVO">
+  		UPDATE match_game
+  		SET matchNation1=#{matchNation1}, matchNation2=#{matchNation2}
+  		WHERE matchNo=#{matchNo} AND memId=#{memId}	
+  	</update>
+  	
+  	<resultMap id="matchResult" type="com.world_cup_2022.projectW.model.MatchResultVO" >
+  		<result property="matchNo" column="matchNo"/>
+  		<result property="matchNation1" column="matchNation1"/>
+  		<result property="matchNation2" column="matchNation2"/> 	
+  	</resultMap>
+  	
+  	<!-- 경기 결과 가져오기 -->
+  	<select id="matchResultView" resultMap="matchResult">
+  		SELECT * FROM match_result ORDER BY matchNo	
+  	</select>
   </mapper>

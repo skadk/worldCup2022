@@ -1,19 +1,9 @@
 package com.world_cup_2022.projectW.model;
 
-public class MatchVO {
-	private int matchGameNo;
+public class MatchResultVO {
 	private int matchNo;
 	private int matchNation1;
 	private int matchNation2;
-	private String memId;
-
-	public int getMatchGameNo() {
-		return matchGameNo;
-	}
-
-	public void setMatchGameNo(int matchGameNo) {
-		this.matchGameNo = matchGameNo;
-	}
 
 	public int getMatchNo() {
 		return matchNo;
@@ -37,14 +27,6 @@ public class MatchVO {
 
 	public void setMatchNation2(int matchNation2) {
 		this.matchNation2 = matchNation2;
-	}
-
-	public String getMemId() {
-		return memId;
-	}
-
-	public void setMemId(String memId) {
-		this.memId = memId;
 	}
 
 }

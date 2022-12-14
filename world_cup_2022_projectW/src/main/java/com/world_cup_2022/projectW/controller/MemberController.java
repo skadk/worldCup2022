@@ -49,10 +49,11 @@ public class MemberController {
 		return "member/login"; // 회원가입 후 로그인 폼으로 이동
 	}
 	
+	// 아이디 중복 체크
 	@ResponseBody
 	@RequestMapping("/member/memIdCheck")
 	public String memIdCheck(@RequestParam("memId") String memId) {
-		// 서비스 호출하고 DB에 prdNo 존재하면 prdNo받고, 존재하지 않으면 null받음
+		// 서비스 호출하고 DB에 memId 존재하면 memId받고, 존재하지 않으면 null받음
 		String memId_result = service.memIdCheck(memId);
 
 		String result = "use";
@@ -61,5 +62,17 @@ public class MemberController {
 		}
 
 		return result;
+	}
+	
+	// 아이디 찾기
+	@RequestMapping("/member/findId")
+	public String findId() {
+		return "member/findId"; // 회원가입 후 로그인 폼으로 이동
+	}
+	
+	// 비밀번호 찾기
+	@RequestMapping("/member/findPwd")
+	public String findPwd() {
+		return "member/findPwd"; // 회원가입 후 로그인 폼으로 이동
 	}
 }

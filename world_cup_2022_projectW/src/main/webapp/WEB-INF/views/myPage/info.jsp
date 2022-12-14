@@ -10,6 +10,7 @@
 	
 	</head>
 	<body>
+
 		<div id="wrap">
 			<!--  top -->         
         	<c:import url="/WEB-INF/views/layout/top.jsp" />
@@ -41,3 +42,4 @@
 		</div>
 	</body>
 </html>
+

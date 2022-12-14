@@ -16,16 +16,29 @@
 			<!-- top -->
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
 			<div id="matchHeaderBox">
-				승부 예측
+				<div>
+					승부 예측
+					<button id="matchBtn">승부예측완료</button>
+					<button id="pointBtn">포인트 지급</button>
+				</div>
 			</div>
 			<div id="mainTabBox">
 				<ul id="TabItem">
-					<li class='tab-button active'><img src='<c:url value="/image/KoreaSymbol.png"/>'>&nbsp;&nbsp;&nbsp;&nbsp;대한민국
-					vs 우루과이 <img src='<c:url value="/image/KoreaSymbol.png"/>'></li>
-					<li class='tab-button'><img src='<c:url value="/image/KoreaSymbol.png"/>'>&nbsp;&nbsp;&nbsp;&nbsp;대한민국
-					vs 가나 <img src='<c:url value="/image/GhanaSymbol.png"/>'></li>
-					<li class='tab-button'><img src='<c:url value="/image/KoreaSymbol.png"/>'>&nbsp;&nbsp;&nbsp;&nbsp;대한민국
-					vs 포르투갈 <img src='<c:url value="/image/PortugalSymbol.png"/>'></li>
+					<li class='tab-button active'>
+						<img src='<c:url value="/image/KoreaSymbol.png"/>'>
+						&nbsp;&nbsp;&nbsp;&nbsp;대한민국 vs 우루과이 
+						<img src='<c:url value="/image/UruguaySymbol.png"/>'>
+					</li>
+					<li class='tab-button'>
+						<img src='<c:url value="/image/KoreaSymbol.png"/>'>
+						&nbsp;&nbsp;&nbsp;&nbsp;대한민국 vs 가나 
+						<img src='<c:url value="/image/GhanaSymbol.png"/>'>
+						</li>
+					<li class='tab-button'>
+						<img src='<c:url value="/image/KoreaSymbol.png"/>'>
+						&nbsp;&nbsp;&nbsp;&nbsp;대한민국 vs 포르투갈 
+						<img src='<c:url value="/image/PortugalSymbol.png"/>'>
+					</li>
 				</ul>
 			</div>
 			<div id='mainBetContainer'>
