@@ -34,4 +34,18 @@
 		FROM member 
 		WHERE memName=#{memName} AND memEmail=#{memEmail}
 	</select>
+	
+	  	<!-- 비밀번호 변경 전 memName 가져오기 -->
+  	<select id="findPwd" parameterType="hashmap" resultType="string">
+		SELECT memName
+		FROM member
+		WHERE memName=#{memName} AND memEmail=#{memEmail}
+	</select>
+	
+  	<!-- 비밀번호 변경하기 -->
+  	<update id="changePwd" parameterType="com.world_cup_2022.projectW.model.MemberVO">
+  		UPDATE member
+  		SET memPwd=#{memPwd}
+  		WHERE memId=#{memId}
+  	</update>
   </mapper>

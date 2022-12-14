@@ -26,12 +26,12 @@
 						<button type="button" id="idCheck">중복확인</button>
 						<br><br>
 						<h4>* 비밀번호</h4>
-						<span class="input_area"><input type="password" maxlength="15" name="memPwd" id="memPwd" 
+						<span class="input_area"><input type="password" maxlength="25" name="memPwd" id="memPwd" 
 						placeholder="영문자+숫자+특수문자 조합"></span>
 						<br><br>
 						
 						<h4>* 비밀번호 확인</h4>
-						<span class="input_area"><input type="password" maxlength="15" name="memPwd2" id="memPwd2"></span>
+						<span class="input_area"><input type="password" maxlength="25" name="memPwd2" id="memPwd2"></span>
 						<label id="pwdResult"></label>
 						<br><br>
 						
