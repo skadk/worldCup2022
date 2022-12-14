@@ -33,5 +33,5 @@
 	</tr>
 </table>
 <input type="button" value="메인으로" class="btn" onclick="location.href='/member/main'">
-</body>s
+</body>
 </html>
