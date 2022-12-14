@@ -70,6 +70,10 @@
 	float: left;
 	margin: 14px;
 }
+
+.controlButton:hover {
+	cursor:pointer;
+}
 /************** SlideShow 끝 **************/
 
 /************** matchScheduleBox 시작 **************/

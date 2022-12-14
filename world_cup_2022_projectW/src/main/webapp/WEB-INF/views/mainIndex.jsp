@@ -27,7 +27,7 @@
 							<img src="<c:url value='/image/마무리.jpg'/>" class="slideImage">
 						</div>
 						<div id="controlButtonBox">
-							<img src="<c:url value='/image/controlButton1.png'/>" class="controlButton">
+							<img src="<c:url value='/image/controlButton2.png'/>" class="controlButton">
 							<img src="<c:url value='/image/controlButton1.png'/>" class="controlButton">
 							<img src="<c:url value='/image/controlButton1.png'/>" class="controlButton">
 						</div>
