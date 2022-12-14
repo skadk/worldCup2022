@@ -9,5 +9,7 @@ public interface IMemberDAO {
 	public String loginCheck(String id);
 	public String memIdCheck(String memId); // 아이디 중복 확인
 	public String findId(HashMap<String, Object> map);
+	public String findPwd(HashMap<String, Object> map);
 	public void insertPoint(String memId);
+	public void changePwd(MemberVO vo);
 }

@@ -66,31 +66,56 @@ public class MemberController {
 		return result;
 	}
 
-	// 아이디 찾기
+	// 아이디 찾기 폼 이동
 	@RequestMapping("/member/findIdForm")
 	public String findIdForm() {
-		return "member/findId"; // 회원가입 후 로그인 폼으로 이동
+		return "member/findIdForm";
 	}
 	
+	// 아이디 찾기위해 이름 이메일 입력 확인
 	@RequestMapping("/member/findId")
 	public String findId(@RequestParam("findIdName") String memName,
 						 @RequestParam("findIdEmail") String memEmail,
 						 Model model) {
 		
 		String result = service.findId(memName, memEmail);
-		model.addAttribute("memIdfind", result);
+		model.addAttribute("id", result);
 		
-		return "member/findIdComplete"; // 회원가입 후 로그인 폼으로 이동
-	}
-	
-	@RequestMapping("/member/findIdComplete")
-	public String findIdComplete() {
-		return "member/findIdComplete"; // 회원가입 후 로그인 폼으로 이동
+		return "member/login";
 	}
 
-	// 비밀번호 찾기
-	@RequestMapping("/member/findPwd")
-	public String findPwd() {
-		return "member/findPwd"; // 회원가입 후 로그인 폼으로 이동
+	// 비밀번호 찾기 폼 이동
+	@RequestMapping("/member/findPwdForm")
+	public String findPwdForm() {
+		return "member/findPwdForm";
 	}
+	
+	// 비밀번호 찾기 위해 이름이랑 이메일 입력 확인
+	@RequestMapping("/member/findPwd")
+	public String findPwd(@RequestParam("findPwdName") String memName,
+						  @RequestParam("findPwdEmail") String memEmail,
+						  Model model) {
+		
+		String result = service.findPwd(memName, memEmail);
+		
+		if (result != null) {
+			if (result.equals(memName)) {
+				return "member/findPwdComplete";
+			} else {
+				return "redirect:/member/login";
+			}
+		} else {
+			return "redirect:/member/findPwdForm";
+		}
+	}
+	
+	// 비밀번호 변경 (업데이트)
+	@RequestMapping("/member/changePwd")
+	public String changePwd(MemberVO vo) {
+		
+		service.changePwd(vo);
+		
+		return "member/login"; // 로그인 폼으로 이동
+	}
+	
 }

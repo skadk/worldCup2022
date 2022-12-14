@@ -64,4 +64,24 @@ public class MemberService implements IMemberService {
 		return result;
 	}
 
+	@Override
+	public String findPwd(String memName, String memEmail) {
+		
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("memName", memName);
+		map.put("memEmail", memEmail);
+
+		String result = dao.findPwd(map);
+		
+		return result;
+	}
+
+	@Override
+	public void changePwd(MemberVO vo) {
+		String encodedPassword = passwordEncoder.encode(vo.getMemPwd());
+		
+		vo.setMemPwd(encodedPassword);
+		dao.changePwd(vo);
+	}
+
 }

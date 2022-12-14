@@ -21,7 +21,7 @@
 					<h1>로그인</h1>
 					
 					<h4>아이디</h4>
-					<span class="input_area"><input type="text" maxlength="13" id="id" name="id" 
+					<span class="input_area"><input type="text" maxlength="13" id="id" name="id" value="${ id }"
 					placeholder="아이디를 입력해 주세요." required></span>
 					
 					<h4>비밀번호</h4>
@@ -29,7 +29,7 @@
 					placeholder="비밀번호를 입력해 주세요." required></span>
 					<ul>
 						<li><a href="<c:url value="/member/findIdForm"/>">아이디 찾기</a></li>
-						<li><a href="<c:url value="/member/findPwd"/>">비밀번호 변경</a></li>
+						<li><a href="<c:url value="/member/findPwdForm"/>">비밀번호 변경</a></li>
 						<li><a href="<c:url value="/member/signUp"/>">회원가입</a></li>
 					</ul>
 					<button type="submit">로그인</button>

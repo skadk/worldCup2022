@@ -16,16 +16,16 @@
 		<c:import url="/WEB-INF/views/layout/top.jsp"/>
 		<div class="findbox">
 			<div id="findId">
-				<form id="findIdForm" name="findIdForm">
-					<h1>비밀번호 찾기</h1>
+				<form method="post" action="/member/findPwd">
+					<h1>비밀번호 변경</h1>
 						
-					<h4>아이디</h4>
-					<span class="input_area"><input type="text" maxlength="15" id="findIdName" name="findIdName" 
+					<h4>이름</h4>
+					<span class="input_area"><input type="text" maxlength="15" id="findPwdName" name="findPwdName" 
 					placeholder="이름을 입력해 주세요." required></span>
 						
 					<h4>이메일</h4>
-					<span class="input_area"><input type="text" maxlength="11" id="findIdHP" name="findIdHP" 
-					placeholder="전화번호를 입력해 주세요." required></span>
+					<span class="input_area"><input type="text" maxlength="30" id="findPwdEmail" name="findPwdEmail" 
+					placeholder="이메일을 입력해 주세요." required></span>
 					<button type="submit">찾기</button>
 					<button type="button" onClick="history.back()">취소</button>
 				</form>
