@@ -19,6 +19,7 @@
 				<div>
 					승부 예측
 					<button id="matchBtn">승부예측완료</button>
+					<button id="pointBtn">포인트 지급</button>
 				</div>
 			</div>
 			<div id="mainTabBox">
