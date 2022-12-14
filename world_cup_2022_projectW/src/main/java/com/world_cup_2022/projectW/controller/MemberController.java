@@ -20,7 +20,7 @@ public class MemberController {
 
 	// 비밀번호 암호화 한 경우의 로그인 처리 방식
 	@ResponseBody
-	@RequestMapping("member/eqlogin")
+	@RequestMapping("/member/eqlogin")
 	public String loginCheck(@RequestParam HashMap<String, Object> param, HttpSession session) {
 		// 로그인 체크 결과
 		String result = service.loginCheck(param);
@@ -34,7 +34,7 @@ public class MemberController {
 	}
 
 	// 로그아웃
-	@RequestMapping("/logout")
+	@RequestMapping("/member/logout")
 	public String logout(HttpSession session) {
 		// 세션 무효화
 		session.invalidate();
@@ -43,10 +43,9 @@ public class MemberController {
 
 	// 회원가입
 	@RequestMapping("/member/insert")
-	public String insert(MemberVO vo, @RequestParam("memHP") String memHP) {
-		vo.setMemHP(memHP);
+	public String insert(MemberVO vo) {
 		service.insertMember(vo);
 
-		return "login"; // 회원가입 후 로그인 폼으로 이동
+		return "member/login"; // 회원가입 후 로그인 폼으로 이동
 	}
 }
