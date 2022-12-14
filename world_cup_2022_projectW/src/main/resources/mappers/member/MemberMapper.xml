@@ -22,4 +22,9 @@
   	<select id="memIdCheck" parameterType="string" resultType="string">
   		select memId from member where memId = #{memId}
   	</select>
+  	
+  	<!-- 아이디 찾기 -->
+  	<select id="findId" parameterType="String" resultType="String">
+		select memId from member where memEmail = #{memEmail}
+	</select>
   </mapper>
