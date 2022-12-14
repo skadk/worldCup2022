@@ -29,7 +29,9 @@
   	</select>
   	
   	<!-- 아이디 찾기 -->
-  	<select id="findId" parameterType="String" resultType="String">
-		select memId from member where memEmail = #{memEmail}
+  	<select id="findId" parameterType="hashmap" resultType="string">
+		SELECT memId
+		FROM member 
+		WHERE memName=#{memName} AND memEmail=#{memEmail}
 	</select>
   </mapper>

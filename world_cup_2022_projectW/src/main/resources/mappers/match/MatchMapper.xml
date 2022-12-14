@@ -35,4 +35,11 @@
   	<select id="matchResultView" resultMap="matchResult">
   		SELECT * FROM match_result ORDER BY matchNo	
   	</select>
+  	
+  	<select id="findWinner">
+  		SELECT matchNation1
+  		FROM match_game
+  		WHERE matchNo=#{matchNo}
+  	</select>
+  	
   </mapper>

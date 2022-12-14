@@ -6,6 +6,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -49,7 +50,7 @@ public class MemberController {
 
 		return "member/login"; // 회원가입 후 로그인 폼으로 이동
 	}
-	
+
 	// 아이디 중복 체크
 	@ResponseBody
 	@RequestMapping("/member/memIdCheck")
@@ -64,13 +65,29 @@ public class MemberController {
 
 		return result;
 	}
-	
+
 	// 아이디 찾기
-	@RequestMapping("/member/findId")
-	public String findId() {
+	@RequestMapping("/member/findIdForm")
+	public String findIdForm() {
 		return "member/findId"; // 회원가입 후 로그인 폼으로 이동
 	}
 	
+	@RequestMapping("/member/findId")
+	public String findId(@RequestParam("findIdName") String memName,
+						 @RequestParam("findIdEmail") String memEmail,
+						 Model model) {
+		
+		String result = service.findId(memName, memEmail);
+		model.addAttribute("memIdfind", result);
+		
+		return "member/findIdComplete"; // 회원가입 후 로그인 폼으로 이동
+	}
+	
+	@RequestMapping("/member/findIdComplete")
+	public String findIdComplete() {
+		return "member/findIdComplete"; // 회원가입 후 로그인 폼으로 이동
+	}
+
 	// 비밀번호 찾기
 	@RequestMapping("/member/findPwd")
 	public String findPwd() {
