@@ -28,7 +28,7 @@
 					<span class="input_area"><input type="password" maxlength="15" id="pwd" name="pwd" 
 					placeholder="비밀번호를 입력해 주세요." required></span>
 					<ul>
-						<li><a href="<c:url value="/member/findId"/>">아이디 찾기</a></li>
+						<li><a href="<c:url value="/member/findIdForm"/>">아이디 찾기</a></li>
 						<li><a href="<c:url value="/member/findPwd"/>">비밀번호 변경</a></li>
 						<li><a href="<c:url value="/member/signUp"/>">회원가입</a></li>
 					</ul>

@@ -44,12 +44,17 @@ public class MatchController {
 	}
 	
 	@RequestMapping("/match/pointGive")
-	public String pointGive(Model model) {
+	public String pointGive(Model model,
+							MatchResultVO vo) {
 		
 		ArrayList<MatchResultVO> mrList = service.matchResultView();
 		model.addAttribute("mrList", mrList);
 		
-		System.out.println(mrList);
+		// service.matchFind(vo.getMatchNo());
+		
+		System.out.println(vo.getMatchNo());
+		System.out.println(vo.getMatchNation1());
+		System.out.println(mrList.get(0));
 		System.out.println("01231564");
 
 		return "menu/match";
