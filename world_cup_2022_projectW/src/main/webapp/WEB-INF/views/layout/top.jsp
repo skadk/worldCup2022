@@ -7,10 +7,16 @@
 					<a href="<c:url value='/'/>"><img src="<c:url value='/image/logo.png'/>"></a>
 				</div>
 				<div id="topMenuBox">
-					<a href="<c:url value='/member/login'/>">로그인</a>
-					<a href="<c:url value='/member/signUp'/>">회원가입</a>
-					<a href="<c:url value='/member/myPage'/>">마이 페이지</a>
-					<a href="<c:url value='/member/cart'/>">장바구니</a>
+					<c:if test="${empty sessionScope.sid }">
+						<a href="<c:url value='/member/login'/>">로그인</a>
+						<a href="<c:url value='/member/signUp'/>">회원가입</a>
+					</c:if>
+					<c:if test="${not empty sessionScope.sid }">
+						${sessionScope.sid}님 환영합니다!
+						<a href="<c:url value='/member/loginForm'/>">로그아웃</a>
+						<a href="<c:url value='/member/myPage'/>">마이 페이지</a>
+						<a href="<c:url value='/member/cart'/>">장바구니</a>
+					</c:if>
 				</div>
 				<div id="mainMenuBox">
 					<div id="mainMenuItem">

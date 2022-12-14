@@ -2,63 +2,63 @@
  * signup.js
  */
 function signupCheck() {
-	var userId = document.getElementById("userId");
-	var userPwd = document.getElementById("userPwd");
-	var userPwd2 = document.getElementById("userPwd2");
-	var userName = document.getElementById("userName");
-	var phone = document.getElementById("phone");
-	var email = document.getElementById("email");
-	var postcode = document.getElementById("postcode");
+	var memId = document.getElementById("memId");
+	var memPwd = document.getElementById("memPwd");
+	var memPwd2 = document.getElementById("memPwd2");
+	var memName = document.getElementById("memName");
+	var memHP = document.getElementById("memHP");
+	var memEmail = document.getElementById("memEmail");
+	var memZipcode = document.getElementById("memZipcode");
 
-	if (userId.value == "") {
+	if (memId.value == "") {
 		alert("아이디를 입력하세요.")
-		userId.focus();
+		memId.focus();
 		return false;
 	};
 
-	if (userPwd.value == "") {
+	if (memPwd.value == "") {
 		alert("비밀번호를 입력하세요.")
-		userPwd.focus();
+		memPwd.focus();
 		return false;
 	};
 
 	var pwdCheck = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
 
-	if (!pwdCheck.test(userPwd.value)) {
+	if (!pwdCheck.test(memPwd.value)) {
 		alert("비밀번호는 영문자+숫자+특수문자 조합으로 8~25자리 사용해야 합니다.");
-		userPwd.focus();
+		memPwd.focus();
 		return false;
 	};
 
-	if (userPwd2.value !== userPwd.value) {
+	if (memPwd2.value !== memPwd.value) {
 		alert("비밀번호가 일치하지 않습니다.")
-		userPwd2.focus();
+		memPwd2.focus();
 		return false;
 	};
 
-	if (userName.value == "") {
+	if (memName.value == "") {
 		alert("이름을 입력하세요.")
-		userName.focus();
+		memName.focus();
 		return false;
 	};
 
 	var num = /^[0-9]+/g;
 
-	if (!num.test(phone.value)) {
+	if (!num.test(memHP.value)) {
 		alert("전화번호는 숫자만 입력하세요.")
-		phone.focus();
+		memHP.focus();
 		return false;
 	};
 
-	if (email.value == "") {
+	if (memEmail.value == "") {
 		alert("이메일을 입력하세요.")
-		email.focus();
+		memEmail.focus();
 		return false;
 	};
 	
-	if (postcode.value == "") {
+	if (memZipcode.value == "") {
 		alert("주소를 입력하세요.")
-		postcode.focus();
+		memZipcode.focus();
 		return false;
 	};
 
