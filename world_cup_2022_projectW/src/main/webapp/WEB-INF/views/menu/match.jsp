@@ -40,7 +40,7 @@
 						<button class='resetBtn1'>초기화</button>
 					</div>
 					<div class='leftBet1'>
-						<button id="bet1" value="1"><img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'></button><br>
+						<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br>
 						<img src="<c:url value="/image/KoreaFB.jpg"/>" width='100' height='100'><br>
 						<h3>대한민국</h3>
 						<b class='score1'>45%</b>

@@ -10,6 +10,7 @@
 		<c:import url="/WEB-INF/views/layout/head.jsp"/>
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/login.css'/>">
 		<link rel="icon" href="<c:url value='/image/대표팀2.png'/>" type="image/x-icon" sizes="16x16">
+		<script src="<c:url value='/js/login.js'/>"></script>
 	</head>
 	<body>
 	<div id="wrap">
