@@ -3,7 +3,8 @@
  */
  
 $(document).ready(function() {
-	var matchNo = 0;
+
+	var matchNo = 1;
 	var nation1 = 0;
 	var nation2 = 0;
 	
@@ -12,7 +13,7 @@ $(document).ready(function() {
 	$('.tab-button').on('click', function() {
 		var index = $(this).index();
 		
-		matchNo = index;
+		matchNo = index + 1;
 		console.log(matchNo);
 		
 		$('.mainBet').removeClass('show');
@@ -26,10 +27,7 @@ $(document).ready(function() {
 	$('.draw1').on('click', function() {
 		
 		nation1 = 1;
-		nation2 = 1;
-		
-		console.log(nation1);
-		console.log(nation2);		
+		nation2 = 1;	
 	
 		$('.rightBet1').addClass('grayscale');
 		$('.leftBet1').addClass('grayscale');
@@ -37,12 +35,16 @@ $(document).ready(function() {
 	});
 
 	$('.draw2').on('click', function() {
+		nation1 = 1;
+		nation2 = 1;	
 		$('.rightBet2').addClass('grayscale');
 		$('.leftBet2').addClass('grayscale');
 		$('.score2').addClass('on');
 	});
 
 	$('.draw3').on('click', function() {
+		nation1 = 1;
+		nation2 = 1;
 		$('.rightBet3').addClass('grayscale');
 		$('.leftBet3').addClass('grayscale');
 		$('.score3').addClass('on');
@@ -52,16 +54,23 @@ $(document).ready(function() {
 
 	//초기화 버튼 클릭시 초기화
 	$('.resetBtn1').on('click', function() {
+		nation1 = 0;
+		nation2 = 0;
+	
 		$('.leftBet1').removeClass('grayscale');
 		$('.rightBet1').removeClass('grayscale');
 		$('.score1').removeClass('on');
 	})
 	$('.resetBtn2').on('click', function() {
+		nation1 = 0;
+		nation2 = 0;
 		$('.leftBet2').removeClass('grayscale');
 		$('.rightBet2').removeClass('grayscale');
 		$('.score2').removeClass('on');
 	})
 	$('.resetBtn3').on('click', function() {
+		nation1 = 0;
+		nation2 = 0;
 		$('.leftBet3').removeClass('grayscale');
 		$('.rightBet3').removeClass('grayscale');
 		$('.score3').removeClass('on');
@@ -75,9 +84,6 @@ $(document).ready(function() {
 		nation1 = 2;
 		nation2 = 0;
 		
-		console.log(nation1);
-		console.log(nation2);
-		
 		$('.leftBet1').removeClass('grayscale');
 		$('.rightBet1').addClass('grayscale');
 		$('.score1').addClass('on');
@@ -87,31 +93,36 @@ $(document).ready(function() {
 		nation1 = 0;
 		nation2 = 2;
 		
-		console.log(nation1);
-		console.log(nation2);
-		
 		$('.rightBet1').removeClass('grayscale');
 		$('.leftBet1').addClass('grayscale');
 		$('.score1').addClass('on');
 	});
 
 	$('.leftBet2').on('click', function() {
+		nation1 = 2;
+		nation2 = 0;
 		$('.leftBet2').removeClass('grayscale');
 		$('.rightBet2').addClass('grayscale');
 		$('.score2').addClass('on');
 	});
 	$('.rightBet2').on('click', function() {
+		nation1 = 0;
+		nation2 = 2;
 		$('.rightBet2').removeClass('grayscale');
 		$('.leftBet2').addClass('grayscale');
 		$('.score2').addClass('on');
 	});
 
 	$('.leftBet3').on('click', function() {
+		nation1 = 2;
+		nation2 = 0;
 		$('.leftBet3').removeClass('grayscale');
 		$('.rightBet3').addClass('grayscale');
 		$('.score3').addClass('on');
 	});
 	$('.rightBet3').on('click', function() {
+		nation1 = 0;
+		nation2 = 2;
 		$('.rightBet3').removeClass('grayscale');
 		$('.leftBet3').addClass('grayscale');
 		$('.score3').addClass('on');
@@ -124,11 +135,25 @@ $(document).ready(function() {
 			data:{"matchNo":matchNo,
 				  "matchNation1":nation1,
 				  "matchNation2":nation2},
-			success:function(result) {
+			success:function() {
 				alert("승부 예측 완료");
 			},
 			error:function() {
-				alert("실패");
+				alert("로그인 하고 해주세요");
+				location.href="/member/login";
+			}
+		}); // ajax 종료
+	});
+	
+	$('#pointBtn').on('click', function() {
+		$.ajax({
+			type:"post",
+			url:"/match/pointGive",
+			success:function() {
+				alert("포인트 지급 완료");
+			},
+			error:function() {
+				alert("포인트 지급 실패 ㅠㅠ");
 			}
 		}); // ajax 종료
 	});
