@@ -6,7 +6,7 @@
   <mapper namespace="com.world_cup_2022.projectW.dao.IMatchDAO">
   	<!-- 승부 예측 선택 -->
   	<insert id="insertChoice">
-  		INSERT INTO match_game(match1, match2, match3, memId)
-  		VALUES(#{match1}, #{match2}, #{match3}, #{memId})
+  		INSERT INTO match_game(matchNo, matchNation1, matchNation2, memId)
+  		VALUES(#{matchNo}, #{matchNation1}, #{matchNation2}, memId=#{memId})
   	</insert>
   </mapper>
