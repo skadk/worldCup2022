@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/signup.css'/>">
 		<link rel="icon" href="<c:url value='/image/대표팀2.png'/>" type="image/x-icon" sizes="16x16">
 		<script src="<c:url value='/js/signup.js'/>"></script>
+		<script src="<c:url value='/js/idCheck.js'/>"></script>
 	</head>
 	<body>
 		<div id="wrap">

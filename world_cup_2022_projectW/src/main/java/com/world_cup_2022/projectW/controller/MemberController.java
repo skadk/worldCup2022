@@ -48,4 +48,18 @@ public class MemberController {
 
 		return "member/login"; // 회원가입 후 로그인 폼으로 이동
 	}
+	
+	@ResponseBody
+	@RequestMapping("/member/memIdCheck")
+	public String memIdCheck(@RequestParam("memId") String memId) {
+		// 서비스 호출하고 DB에 prdNo 존재하면 prdNo받고, 존재하지 않으면 null받음
+		String memId_result = service.memIdCheck(memId);
+
+		String result = "use";
+		if (memId_result != null) { // 존재 한다면
+			result = "no_use";
+		}
+
+		return result;
+	}
 }
