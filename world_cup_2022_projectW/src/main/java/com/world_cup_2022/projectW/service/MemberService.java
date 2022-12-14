@@ -46,5 +46,11 @@ public class MemberService implements IMemberService {
 	public String memIdCheck(String memId) {
 		return dao.memIdCheck(memId);
 	}
+
+	@Override
+	public void insertPoint(String memId) {
+		dao.insertPoint(memId);
+		
+	}
 	
 }

@@ -45,6 +45,7 @@ public class MemberController {
 	@RequestMapping("/member/insert")
 	public String insert(MemberVO vo) {
 		service.insertMember(vo);
+		service.insertPoint(vo.getMemId());
 
 		return "member/login"; // 회원가입 후 로그인 폼으로 이동
 	}
