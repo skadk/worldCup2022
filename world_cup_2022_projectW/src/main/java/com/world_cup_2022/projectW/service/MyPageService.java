@@ -20,4 +20,11 @@ public class MyPageService implements IMyPageService {
 		return dao.detailViewMyPage(memId);
 	}
 
+		@Override
+		public void updateMyPage(MemberVO mem) {
+			
+				dao.updateMyPage(mem);
+			
+		}
+
 }
