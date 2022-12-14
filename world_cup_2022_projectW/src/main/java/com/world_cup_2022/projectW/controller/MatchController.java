@@ -16,11 +16,18 @@ public class MatchController {
 	// 승부예측 추가
 	@RequestMapping("/match/insert")
 	public String insert(MatchVO vo,
-						 @RequestParam("bet1") int bet1) {
+						 @RequestParam("matchNo") int matchNo,
+						 @RequestParam("matchNation1") int matchNation1,
+						 @RequestParam("matchNation2") int matchNation2) {
 		
-		vo.setMatch1(bet1);
+		vo.setMatchNo(matchNo);
+		vo.setMatchNation1(matchNation1);
+		vo.setMatchNation2(matchNation2);
+		
 		service.insertChoice(vo);
 	
 		return "menu/match"; // 승부예측 추가 후 match 페이지
 	}
+	
+	
 }

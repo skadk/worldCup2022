@@ -1,34 +1,42 @@
 package com.world_cup_2022.projectW.model;
 
 public class MatchVO {
-	private int match1;
-	private int match2;
-	private int match3;
+	private int matchGameNo;
+	private int matchNo;
+	private int matchNation1;
+	private int matchNation2;
 	private String memId;
-	private int memPoint;
 
-	public int getMatch1() {
-		return match1;
+	public int getMatchGameNo() {
+		return matchGameNo;
 	}
 
-	public void setMatch1(int match1) {
-		this.match1 = match1;
+	public void setMatchGameNo(int matchGameNo) {
+		this.matchGameNo = matchGameNo;
 	}
 
-	public int getMatch2() {
-		return match2;
+	public int getMatchNo() {
+		return matchNo;
 	}
 
-	public void setMatch2(int match2) {
-		this.match2 = match2;
+	public void setMatchNo(int matchNo) {
+		this.matchNo = matchNo;
 	}
 
-	public int getMatch3() {
-		return match3;
+	public int getMatchNation1() {
+		return matchNation1;
 	}
 
-	public void setMatch3(int match3) {
-		this.match3 = match3;
+	public void setMatchNation1(int matchNation1) {
+		this.matchNation1 = matchNation1;
+	}
+
+	public int getMatchNation2() {
+		return matchNation2;
+	}
+
+	public void setMatchNation2(int matchNation2) {
+		this.matchNation2 = matchNation2;
 	}
 
 	public String getMemId() {
@@ -37,14 +45,6 @@ public class MatchVO {
 
 	public void setMemId(String memId) {
 		this.memId = memId;
-	}
-
-	public int getMemPoint() {
-		return memPoint;
-	}
-
-	public void setMemPoint(int memPoint) {
-		this.memPoint = memPoint;
 	}
 
 }

@@ -15,6 +15,10 @@
 	display: block;
 }
 
+.active { /* jQuery addClass를 이용해서 클릭 시 효과 */
+	background-color: black;
+}
+
 .grayscale img { /* jQuery addClass를 이용해서 흑백 및 블러 효과 */
 	-webkit-filter: blur(2px) grayscale(90%);
 	filter: blur(2px) grayscale(90%);
@@ -249,8 +253,4 @@ body {
 
 #mainTabBox ul li:hover {
 	cursor: pointer;
-}
-
-.active { /* jQuery addClass를 이용해서 클릭 시 효과 */
-	background-color: black;
 }
