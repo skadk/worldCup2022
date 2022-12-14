@@ -29,7 +29,7 @@
 					placeholder="비밀번호를 입력해 주세요." required></span>
 					<ul>
 						<li><a href="#">아이디/비밀번호찾기</a></li>
-						<li><a href="<c:url value="/signup"/>">회원가입</a></li>
+						<li><a href="<c:url value="/member/signUp"/>">회원가입</a></li>
 					</ul>
 					<button type="submit">로그인</button>
 				</form>
