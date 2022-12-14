@@ -13,9 +13,14 @@
   	</select>
   	
   	<!-- 회원 등록 -->
-  	<insert id="insertMember">
+  	<insert id="insertMember" parameterType="com.world_cup_2022.projectW.model.MemberVO">
   		insert into member(memId, memPwd, memName, memHP, memEmail, memZipcode, memAddress1, memAddress2, memPoint)
   		values(#{memId},#{memPwd},#{memName},#{memHP},#{memEmail},#{memZipcode},#{memAddress1},#{memAddress2},3000)
+  	</insert>
+  	
+  	<insert id="insertPoint" parameterType="string">
+  		insert into point_all(pointTotal, memId)
+  		values(3000, #{memId})
   	</insert>
   	
   	<!-- 아이디 중복 확인 -->
