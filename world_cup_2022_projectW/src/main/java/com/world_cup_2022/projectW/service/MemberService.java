@@ -41,5 +41,5 @@ public class MemberService implements IMemberService {
 		vo.setMemPwd(encodedPassword); // vo에 암호화된 비밀번호 저장
 		dao.insertMember(vo);
 	}
-
+	
 }
