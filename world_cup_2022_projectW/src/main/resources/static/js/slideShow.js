@@ -37,16 +37,15 @@
 	
 	// 컨트롤 버튼 
 	// 각 컨트롤 버튼에 마우스 올렸을 때 이미지 변경. moveSlide() 함수 호출하면 index 전달
-	$('.controlButton').each(function(index){		
-		$(this).hover(
-			function() {    // 마우스 올렸을 때 이미지 변경
-				$(this).attr('src', '/image/controlButton2.png');
-			},
-			function() {
-				$(this).attr('src', '/image/controlButton1.png');
-			}
-		);
+	$('.controlButton').on('click', function() {
+		var index = $(this).index();
+
+		$('.controlButton').attr('src', '/image/controlButton1.png');
 		
+		$('.controlButton').eq(index).attr('src', '/image/controlButton2.png');
+	});
+	
+	$('.controlButton').each(function(index){		
 		// 클릭했을 때 현재 인덱스 값을 moveSlide() 함수에게 전달
 		$(this).on('click', function() {
 			moveSlide(index);
