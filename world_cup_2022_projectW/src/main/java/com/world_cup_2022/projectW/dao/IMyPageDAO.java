@@ -6,9 +6,8 @@ public interface IMyPageDAO {
 		
 
 
-	
-
-	public MemberVO detailViewMyPage(String memId); // 상세 상품 조회
+	public void updateMyPage(MemberVO mem);
+	public MemberVO detailViewMyPage(String memId); // 회원 정보조회
 	
 
 	
