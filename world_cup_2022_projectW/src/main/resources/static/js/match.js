@@ -1,8 +1,13 @@
 /**
  * 
  */
+ 
 $(document).ready(function() {
-
+	var match = 0;
+	var nation1 = 0;
+	var nation2 = 0;
+	
+	
 	//인덱스탭 경기일정 선택시 화면 전환 구간
 	$('.tab-button').on('click', function() {
 		var index = $(this).index();
