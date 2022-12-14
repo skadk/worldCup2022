@@ -42,4 +42,9 @@ public class MemberService implements IMemberService {
 		dao.insertMember(vo);
 	}
 
+	@Override
+	public String memIdCheck(String memId) {
+		return dao.memIdCheck(memId);
+	}
+	
 }
