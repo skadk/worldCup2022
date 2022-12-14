@@ -9,7 +9,6 @@
 		<!-- head -->
 		<c:import url="/WEB-INF/views/layout/head.jsp"/>
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/login.css'/>">
-		<link rel="icon" href="<c:url value='/image/대표팀2.png'/>" type="image/x-icon" sizes="16x16">
 		<script src="<c:url value='/js/login.js'/>"></script>
 	</head>
 	<body>
@@ -29,7 +28,8 @@
 					<span class="input_area"><input type="password" maxlength="15" id="pwd" name="pwd" 
 					placeholder="비밀번호를 입력해 주세요." required></span>
 					<ul>
-						<li><a href="#">아이디/비밀번호찾기</a></li>
+						<li><a href="<c:url value="/member/findId"/>">아이디 찾기</a></li>
+						<li><a href="<c:url value="/member/findPwd"/>">비밀번호 변경</a></li>
 						<li><a href="<c:url value="/member/signUp"/>">회원가입</a></li>
 					</ul>
 					<button type="submit">로그인</button>
@@ -38,7 +38,7 @@
 		</div>
 	</div>
 	</body>
-		<footer>
+	<footer>
         <!-- bottom -->
         <c:import url="/WEB-INF/views/layout/bottom.jsp"/>
     </footer>
