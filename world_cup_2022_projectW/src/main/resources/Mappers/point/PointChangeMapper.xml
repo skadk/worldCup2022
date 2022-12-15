@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.world_cup_2022.projectW.dao.IPointChangeDAO">
+    <resultMap id="ptResult" type="com.world_cup_2022.projectW.model.PointChangeVO" >
+        <result property="pointChangeNo" column="pointChangeNo"  />
+        <result property="memId" column="memId"  />
+        <result property="pointAdd" column="pointAdd"  />
+        <result property="pointUsed" column="pointUsed"  />
+        <result property="pointDate" column="pointDate"  />
+        <result property="pointDescription" column="pointDescription"  />
+    </resultMap>
+  	
+  	<select id="pointView" resultMap="ptResult">
+  		SELECT *
+  		FROM point_change ORDER BY pointChangeNo DESC
+  	</select>
+  	
+  </mapper>

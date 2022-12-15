@@ -8,6 +8,7 @@
 		<title>상품 상세 조회</title>
 		<c:import url="/WEB-INF/views/layout/head.jsp" />
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/mypage2.css'/>">
+		<script src="<c:url value='/js/ptchange.js'/>"></script>
 		<style>
 			#wrap{
 				margin:0 auto;
@@ -41,13 +42,15 @@
                                 <tr><td>이메일</td>
                                         <td colspan="2"><input type="text" name="memEmail" value="${mem.memEmail}" readonly></td></tr>
                                 <tr><td id="zipcode">우편번호 </td>
-                                        <td><input type="text" name="memZipcode" class="postcodify_postcode" id="memZipcode" value="${mem.memZipcode}" readonly></td></tr>
+                                        <td colspan="2"><input type="text" name="memZipcode" class="postcodify_postcode" id="memZipcode" value="${mem.memZipcode}" readonly></td></tr>
                                 <tr><td>도로명주소</td>
                                     <td colspan="2"><input type="text" name="memAddress1" class="postcodify_address" id="memAddress1" value="${mem.memAddress1}" readonly></td></tr>
                                 <tr><td>상세주소</td>
                                     <td colspan="2"><input type="text" name="memAddress2" class="postcodify_details" id="memAddress2" value="${mem.memAddress2}" readonly></td></tr>
                                 <tr><td>포인트</td>
-                                	<td colspan="2"><input type="text" name="pointTotal" id="pointTotal" value="${pointTotal }" readonly></td></tr>
+                                	<td><input type="text" name="pointTotal" id="pointTotal" value="${pointTotal }" readonly></td>
+                                	<td><button type="button" id="ptchangeBtn">포인트 내역</button></td></tr>
+                                	
                                 <tr><td colspan="3">
                                 
 								<a href="<c:url value='/myPage/updateMyPageForm/${mem.memId}'/>"><input id="button" type="button" value="회원정보수정" class="btn"></a>

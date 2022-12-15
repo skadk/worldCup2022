@@ -1,5 +1,7 @@
 package com.world_cup_2022.projectW.controller;
 
+import java.util.ArrayList;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +11,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.world_cup_2022.projectW.model.MemberVO;
-import com.world_cup_2022.projectW.model.PointAllVO;
+import com.world_cup_2022.projectW.model.PointChangeVO;
 import com.world_cup_2022.projectW.service.MyPageService;
+import com.world_cup_2022.projectW.service.PointChangeService;
 import com.world_cup_2022.projectW.service.PointService;
 
 @Controller
@@ -20,6 +23,9 @@ public class MyPageController {
 	
 	@Autowired
 	PointService pservice;
+	
+	@Autowired
+	PointChangeService pcservice;
 
 	/* 마이페이지 이동 */
 	@RequestMapping("/myPage/detailViewMyPage/{memId}")
@@ -76,4 +82,15 @@ public class MyPageController {
 
 		return "redirect:/";
 	}
+	
+	@RequestMapping("/myPage/MyPagePointChange")
+	public String point(Model model) {
+		
+		ArrayList<PointChangeVO> ptList = pcservice.pointView();
+		model.addAttribute("ptList", ptList);
+		
+		return "myPage/MyPagePointChange";
+	}
+
+	
 }
