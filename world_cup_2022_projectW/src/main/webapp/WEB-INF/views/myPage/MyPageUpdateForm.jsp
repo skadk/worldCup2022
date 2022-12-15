@@ -24,14 +24,14 @@
 		<div id="wrap">
 			<h3>상품 정보 수정 폼</h3>
 			<hr>
-			<form method="post" action="<c:url value='/myPage/updateMyPage' />">
+			<form method="post" action="<c:url value='/myPage/updateMyPage'/>">
 				<table>
 					<tr><td>회원명</td>
-							<td><input type="text" name="memName" value="${mem.memName }" readonly></td></tr>
+							<td><input type="text" name="memName" value="${mem.memName }"></td></tr>
 					<tr><td>전화번호  </td>
 							<td><input type="text" name="memHP"  value="${mem.memHP }" ></td></tr>
 					<tr><td>이메일  </td>
-							<td><input type="text" name="prdPrice"   value="${prd.prdPrice }" ></td></tr>
+							<td><input type="text" name="memEmail"   value="${mem.memEmail}" ></td></tr>
 					<tr><td>우편번호 </td>
 							<td> <input type="text" name="memZipcode" class="postcodify_postcode" id="memZipcode" readonly>
 						<button type="button" id="postcodify_search_button">검색</button></td></tr>
@@ -39,10 +39,10 @@
 						<td><input type="text" name="memAddress1" class="postcodify_address" id="memAddress1" readonly></td></tr>
 					<tr><td>상세주소</td>
 						<td><input type="text" name="memAddress2" class="postcodify_details" id="memAddress2"></td></tr>		
-					<tr><td>제조일 </td>
-							<td> <input type="text" name="prdDate" value="<fmt:formatDate value="${prd.prdDate}"  pattern="yyyy-MM-dd" />"></td></tr>
-					<tr><td colspan="2"><input type="submit" value="수정"> 
-													      <input type="reset" value="취소"></td></tr>
+					
+					<tr><td colspan="2">
+					<input type="submit" value="수정">
+				    <input type="reset" value="취소"></td></tr>
 				</table>
 			</form>
 			<br><br>
