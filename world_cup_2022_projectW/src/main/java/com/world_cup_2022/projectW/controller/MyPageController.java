@@ -9,12 +9,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.world_cup_2022.projectW.model.MemberVO;
+import com.world_cup_2022.projectW.model.PointAllVO;
 import com.world_cup_2022.projectW.service.MyPageService;
+import com.world_cup_2022.projectW.service.PointService;
 
 @Controller
 public class MyPageController {
 	@Autowired
 	private MyPageService service;
+	
+	@Autowired
+	PointService pservice;
 
 	/* 마이페이지 이동 */
 	@RequestMapping("/myPage/detailViewMyPage/{memId}")
@@ -22,6 +27,9 @@ public class MyPageController {
 
 		MemberVO mem = service.detailViewMyPage(memId);
 		model.addAttribute("mem", mem);
+		
+		int pointTotal = pservice.pointTotalCheck(memId);
+		model.addAttribute("pointTotal", pointTotal);
 
 		return "myPage/info";
 	}
@@ -60,7 +68,6 @@ public class MyPageController {
 	// 회원 탈퇴 페이지
 	@RequestMapping("/myPage/deleteMyPage")
 	public String deleteMyPage(MemberVO mem, Model model, HttpSession session) {
-		
 		
 		service.deleteMyPage(mem);
 		
