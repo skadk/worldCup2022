@@ -18,10 +18,6 @@
 			<form id="boardForm" method="post" action="<c:url value='/menu/board'/>">
 			<h1>응원 톡</h1>
 			<hr>
-			<input type="hidden" name="memId" value="${memVo.memId}">
-			<input type="hidden" name="boardNo" value="${boVo.boardNo}">
-			 <input type="text" maxlength="13" id="id" name="id">
-			 <input id="button" type="submit" value="등록">
 			
 		</form>	
 		</div>		
