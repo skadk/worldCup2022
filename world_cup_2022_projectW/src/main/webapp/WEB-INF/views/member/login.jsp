@@ -22,7 +22,7 @@
 					<h1>로그인</h1>
 					
 					<h4>아이디</h4>
-					<span class="input_area"><input type="text" maxlength="13" id="id" name="id" value=""
+					<span class="input_area"><input type="text" maxlength="13" id="id" name="id" value="${memId}"
 					placeholder="아이디를 입력해 주세요." required/></span>
 					
 					<h4>비밀번호</h4>
