@@ -19,6 +19,8 @@
 	$('#prevButton').on('click', function(){
 		if(movedIndex !=0)  // 첫 번째가 아니면
 			movedIndex = movedIndex - 1; // 인덱스 값 - 1
+		else
+			movedIndex = 2;
 		
 		moveSlide(movedIndex);  // 실제로 슬라이드 패널을 움직이는 함수 호출하면 계산된 인덱스값 전달
 		
@@ -31,6 +33,8 @@
 	$('#nextButton').on('click', function(){
 		if(movedIndex != 2)  // 마지막이 아니면
 			movedIndex = movedIndex + 1; // 인덱스 값 + 1
+		else
+			movedIndex = 0;
 		
 		moveSlide(movedIndex); // 실제로 슬라이드 패널을 움직이는 함수 호출하면 계산된 인덱스값 전달
 		
