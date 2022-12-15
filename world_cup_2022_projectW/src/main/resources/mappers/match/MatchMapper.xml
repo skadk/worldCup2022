@@ -36,11 +36,13 @@
   		SELECT * FROM match_result ORDER BY matchNo	
   	</select>
   	
-  	<!--  -->
+  	<!-- 승부 예측 성공자 아이디 가져오기 -->
   	<select id="matchFind" parameterType="hashmap" resultType="com.world_cup_2022.projectW.model.MemberVO">
   		SELECT memId
   		FROM match_game
   		WHERE matchNo=#{matchNo} AND matchNation1=#{matchNation1}
   	</select>
+  	
+  	
   	
   </mapper>
