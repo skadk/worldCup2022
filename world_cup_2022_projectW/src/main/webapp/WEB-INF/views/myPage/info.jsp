@@ -32,7 +32,7 @@
 				</table><br><br>
 					<input type="button" value="회원정보수정" class="btn" onclick="location.href='/myPage/updateForm'">
 					<input type="button" value="로그아웃" class="btn" onclick="location.href='/member/logout'">
-					<input type="button" value="회원탈퇴" class="btn" onclick="location.href='/myPage/deleteForm'">
+					<input type="button" value="회원탈퇴" class="btn" onclick="location.href='/myPage/myPageDeleteView'">
 				<br><br>
 				</form>
 				

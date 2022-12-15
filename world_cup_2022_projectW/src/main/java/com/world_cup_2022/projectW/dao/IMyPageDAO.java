@@ -9,7 +9,7 @@ public interface IMyPageDAO {
 	
 
 	public MemberVO detailViewMyPage(String memId); // 상세 상품 조회
-	
+	public void memberDelete(MemberVO vo)throws Exception; //회원 탈퇴
 
 	
 

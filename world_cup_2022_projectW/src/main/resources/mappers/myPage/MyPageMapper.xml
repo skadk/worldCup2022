@@ -11,8 +11,7 @@
 	                  resultType="com.world_cup_2022.projectW.model.MemberVO">
 	SELECT * FROM member WHERE memId = #{memId}
     </select>
-	
-	
-		
-	
+	<delete id="memberDelete">
+		delete from member where memId=#{memId} and memPwd=#{memPwd}
+	</delete>
  </mapper>
