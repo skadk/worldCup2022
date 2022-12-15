@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.world_cup_2022.projectW.model.MatchResultVO;
 import com.world_cup_2022.projectW.model.MatchVO;
+import com.world_cup_2022.projectW.model.MemberVO;
 import com.world_cup_2022.projectW.service.MatchService;
 
 @Controller
@@ -50,18 +51,24 @@ public class MatchController {
 		ArrayList<MatchResultVO> mrList = service.matchResultView();
 		model.addAttribute("mrList", mrList);
 		
-		// service.matchFind(vo.getMatchNo());
+		ArrayList<MemberVO> memList  = service.matchFind(mrList.get(0).getMatchNo(),
+														 mrList.get(0).getMatchNation1());
 		
-		System.out.println(mrList.get(0).getMatchNo());
-		System.out.println(mrList.get(0).getMatchNation1());
-		System.out.println(mrList.get(0).getMatchNation2());
-		System.out.println(mrList.get(1).getMatchNo());
-		System.out.println(mrList.get(1).getMatchNation1());
-		System.out.println(mrList.get(1).getMatchNation2());
-		System.out.println(mrList.get(2).getMatchNo());
-		System.out.println(mrList.get(2).getMatchNation1());
-		System.out.println(mrList.get(2).getMatchNation2());
-		System.out.println("01231564");
+//		for (int i=0; i< memList.size(); i++ ) {
+//			MemberVO mem = memList.get(i);
+//			
+//			System.out.println(mem.getMemId());
+//		}
+		//System.out.println(memId);
+//		System.out.println(mrList.get(0).getMatchNo());
+//		System.out.println(mrList.get(0).getMatchNation1());
+//		System.out.println(mrList.get(0).getMatchNation2());
+//		System.out.println(mrList.get(1).getMatchNo());
+//		System.out.println(mrList.get(1).getMatchNation1());
+//		System.out.println(mrList.get(1).getMatchNation2());
+//		System.out.println(mrList.get(2).getMatchNo());
+//		System.out.println(mrList.get(2).getMatchNation1());
+//		System.out.println(mrList.get(2).getMatchNation2());
 
 		return "menu/match";
 	}

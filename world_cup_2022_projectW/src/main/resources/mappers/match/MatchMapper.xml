@@ -36,10 +36,11 @@
   		SELECT * FROM match_result ORDER BY matchNo	
   	</select>
   	
-  	<select id="findWinner">
-  		SELECT matchNation1
+  	<!--  -->
+  	<select id="matchFind" parameterType="hashmap" resultType="com.world_cup_2022.projectW.model.MemberVO">
+  		SELECT memId
   		FROM match_game
-  		WHERE matchNo=#{matchNo}
+  		WHERE matchNo=#{matchNo} AND matchNation1=#{matchNation1}
   	</select>
   	
   </mapper>

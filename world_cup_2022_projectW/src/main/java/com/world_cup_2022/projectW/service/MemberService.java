@@ -48,11 +48,6 @@ public class MemberService implements IMemberService {
 	}
 
 	@Override
-	public void insertPoint(String memId) {
-		dao.insertPoint(memId);
-	}
-
-	@Override
 	public String findId(String memName, String memEmail) {
 		
 		HashMap<String, Object> map = new HashMap<String, Object>();

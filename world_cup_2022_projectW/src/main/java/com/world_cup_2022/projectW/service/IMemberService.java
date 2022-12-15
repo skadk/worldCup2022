@@ -10,6 +10,5 @@ public interface IMemberService {
 	public String memIdCheck(String memId); // 아이디 중복 확인
 	public String findId(String memName, String memEmail);
 	public String findPwd(String memName, String memEmail);
-	public void insertPoint(String memId);
 	public void changePwd(MemberVO vo);
 }

@@ -14,8 +14,8 @@
   	
   	<!-- 회원 등록 -->
   	<insert id="insertMember" parameterType="com.world_cup_2022.projectW.model.MemberVO">
-  		insert into member(memId, memPwd, memName, memHP, memEmail, memZipcode, memAddress1, memAddress2, memPoint)
-  		values(#{memId},#{memPwd},#{memName},#{memHP},#{memEmail},#{memZipcode},#{memAddress1},#{memAddress2},3000)
+  		insert into member(memId, memPwd, memName, memHP, memEmail, memZipcode, memAddress1, memAddress2)
+  		values(#{memId},#{memPwd},#{memName},#{memHP},#{memEmail},#{memZipcode},#{memAddress1},#{memAddress2})
   	</insert>
   	
   	<insert id="insertPoint" parameterType="string">

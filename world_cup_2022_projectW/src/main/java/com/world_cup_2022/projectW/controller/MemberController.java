@@ -7,17 +7,22 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.world_cup_2022.projectW.model.MemberVO;
 import com.world_cup_2022.projectW.service.MemberService;
+import com.world_cup_2022.projectW.service.PointService;
 
 @Controller
 public class MemberController {
 	@Autowired
 	MemberService service;
+	
+	@Autowired
+	PointService pservice;
 
 	// 비밀번호 암호화 한 경우의 로그인 처리 방식
 	@ResponseBody
@@ -33,6 +38,14 @@ public class MemberController {
 		}
 		return result;
 	}
+	
+	// 아이디 찾은 후 로그인
+	@RequestMapping("/member/searchAfterLoginForm")
+	public String searchAfterLoginForm(@RequestParam String memId, Model model) {
+		model.addAttribute("memId", memId);
+		
+		return "member/login";
+	}
 
 	// 로그아웃
 	@RequestMapping("/member/logout")
@@ -46,7 +59,8 @@ public class MemberController {
 	@RequestMapping("/member/insert")
 	public String insert(MemberVO vo) {
 		service.insertMember(vo);
-		service.insertPoint(vo.getMemId());
+		pservice.insertPoint(vo.getMemId());
+		pservice.insertMemIdPoint(vo.getMemId());
 
 		return "member/login"; // 회원가입 후 로그인 폼으로 이동
 	}

@@ -9,7 +9,6 @@ public class MemberVO {
 	private String memZipcode;
 	private String memAddress1;
 	private String memAddress2;
-	private int memPoint;
 	
 	public String getMemId() {
 		return memId;
@@ -58,12 +57,6 @@ public class MemberVO {
 	}
 	public void setMemAddress2(String memAddress2) {
 		this.memAddress2 = memAddress2;
-	}
-	public int getMemPoint() {
-		return memPoint;
-	}
-	public void setMemPoint(int memPoint) {
-		this.memPoint = memPoint;
 	}
 	
 }

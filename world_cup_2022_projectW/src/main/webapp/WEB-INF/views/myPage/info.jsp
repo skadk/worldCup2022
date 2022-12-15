@@ -24,7 +24,6 @@
 					<tr><td>우편번호  </td><td>${mem.memZipcode }</td></tr>
 					<tr><td>도로명주소  </td><td>${mem.memAddress1 }</td></tr>
 					<tr><td>상세주소  </td><td>${mem.memAddress2}</td></tr>
-					<tr><td>포인트  </td><td>${mem.memPoint }</td></tr>
 				</table><br><br>
 					<a href="<c:url value='/myPage/updateMyPageForm/${mem.memId}'/>"><input type="button" value="회원정보수정" class="btn"></a>
 					<a href="<c:url value='/myPage/deleteMyPageForm/${mem.memId}'/>"><input type="button" value="회원탈퇴" class="btn"></a>

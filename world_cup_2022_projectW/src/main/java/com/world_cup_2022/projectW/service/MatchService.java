@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.world_cup_2022.projectW.dao.IMatchDAO;
 import com.world_cup_2022.projectW.model.MatchResultVO;
 import com.world_cup_2022.projectW.model.MatchVO;
+import com.world_cup_2022.projectW.model.MemberVO;
 
 @Service
 public class MatchService implements IMatchService {
@@ -44,6 +45,19 @@ public class MatchService implements IMatchService {
 	@Override
 	public ArrayList<MatchResultVO> matchResultView() {
 		return dao.matchResultView();
+	}
+
+	@Override
+	public ArrayList<MemberVO> matchFind(int matchNo, int matchNation1) {
+		
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("matchNo", matchNo);
+		map.put("matchNation1", matchNation1);
+
+		ArrayList<MemberVO> result = dao.matchFind(map);
+		
+		return result;
+
 	}
 
 }
