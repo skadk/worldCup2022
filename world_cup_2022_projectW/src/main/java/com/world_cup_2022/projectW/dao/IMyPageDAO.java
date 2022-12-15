@@ -6,6 +6,12 @@ public interface IMyPageDAO {
 
 	public MemberVO detailViewMyPage(String memId); // 회원 정보조회
 
+	
+
+	public void memberDelete(MemberVO vo)throws Exception; //회원 탈퇴
+
+	
+
 	public void updateMyPage(MemberVO mem); // 회원정보조회 수정
 
 }
