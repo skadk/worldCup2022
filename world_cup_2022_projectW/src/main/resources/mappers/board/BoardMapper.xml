@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.world_cup_2022.projectW.dao.IBoardDAO">
+  	<insert id="insertBoardText" parameterType="hashmap">
+  		INSERT INTO board(memId, boardText)
+  		VALUES(#{memId}, #{boardText})
+  	</insert>
+    <resultMap id="brdResult" type="com.world_cup_2022.projectW.model.BoardVO" >
+        <result property="boardNo" column="boardNo"  />
+        <result property="memId" column="memId"  />
+        <result property="boardText" column="boardText"  />
+        <result property="boardDate" column="boardDate"  />
+    </resultMap>
+  	
+  	<select id="boardView" resultMap="brdResult">
+  		SELECT *
+  		FROM board ORDER BY boardNo DESC
+  	</select>
+  	
+  </mapper>
