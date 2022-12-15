@@ -19,10 +19,10 @@ $(document).ready(function() {
 	});
 	$(window).on('scroll', function() {
 		// 스크롤되는 문서의 top이 #headerBox 이상이면 메인 메뉴 고정시키고 그림자 표시
-		if ($(document).scrollTop() >= $('#wrapmenu').height()) {
-			$('#position').addClass('mainMenuFixed');
+		if ($(document).scrollTop() >= 80) {
+			$('#position').addClass('MenuFixed');
 		} else {
-			$('#position').removeClass('mainMenuFixed');
+			$('#position').removeClass('MenuFixed');
 		}
 	});
 
