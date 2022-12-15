@@ -5,10 +5,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>비밀번호 변경</title>
 		<!-- head -->
 		<c:import url="/WEB-INF/views/layout/head.jsp"/>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/signup.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/findpwdcomplete.css'/>">
 		<script src="<c:url value='/js/changePwd.js'/>"></script>
 		<script src="<c:url value='/js/idCheck.js'/>"></script>
 	</head>
@@ -19,14 +19,16 @@
 			<div class="wrap">
 				<div id="signUp">
 					<form name="changePwd" id="changePwd" method="post"  action="<c:url value='/member/changePwd'/>">
+						<h1>비밀번호 변경</h1>
+						
 						<h4>* 아이디</h4>
 						<span class="input_area"><input type="text" maxlength="13" name="memId" id="memId"></span>
 						<br><br>
-						<h4>* 비밀번호</h4>
+						<h4>* 변경할 비밀번호</h4>
 						<span class="input_area"><input type="password" maxlength="25" name="memPwd" id="memPwd" 
 						placeholder="영문자+숫자+특수문자 조합"></span>
 						<br><br>			
-						<h4>* 비밀번호 확인</h4>
+						<h4>* 변경할 비밀번호 확인</h4>
 						<span class="input_area"><input type="password" maxlength="25" name="memPwd2" id="memPwd2"></span>
 						<label id="pwdResult"></label>
 						<br><br>

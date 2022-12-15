@@ -23,6 +23,7 @@
 						<br>
 						<h4>* 아이디</h4>
 						<span class="input_area"><input type="text" maxlength="13" name="memId" id="memId"></span>
+						<input type="hidden" name="checked_id" value="">
 						<button type="button" id="idCheck">중복확인</button>
 						<br><br>
 						<h4>* 비밀번호</h4>

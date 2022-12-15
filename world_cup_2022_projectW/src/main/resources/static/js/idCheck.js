@@ -5,6 +5,7 @@
  $(document).ready(function(){
  	$("#idCheck").on("click", function(){
  		event.preventDefault();
+ 		$("input[name=checked_id]").val('y');
  		
  		// 서버에 전송 결과 받아서 처리
  		$.ajax({

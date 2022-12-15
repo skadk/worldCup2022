@@ -52,5 +52,10 @@ public class HomeController {
 	public String admin() {
 		
 		return "menu/admin";
+
+	@RequestMapping("/menu/board")
+	public String board() {
+		
+		return "menu/board";
 	}
 }
