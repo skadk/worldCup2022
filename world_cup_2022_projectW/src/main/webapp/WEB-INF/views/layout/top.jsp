@@ -23,7 +23,7 @@
 						<p><a href="<c:url value='/menu/korTeam'/>">한국대표팀 소개</a></p>
 						<p><a href="<c:url value='/menu/cheerWall'/>">응원 담벼락</a></p>
 						<p><a href="<c:url value='/menu/match'/>">승부 예측</a></p>
-						<p><a href="<c:url value='/menu/prize'/>">굿즈 상점</a></p>
+						<p><a href="<c:url value='/menu/prize'/>">경품 응모</a></p>
 						<p><a href="<c:url value='/menu/board'/>">게시판</a></p>
 					</div>
 				</div>

@@ -208,6 +208,11 @@ body {
 
 /* ===================================================== */
 /* Menu */
+#matchTitleBox {
+	width:300px;
+	background-color: white;
+}
+
 #matchHeaderBox { /* header 텍스트 박스 */
 	width: 1280px;
 	height: 30px;
@@ -215,6 +220,7 @@ body {
 	padding: 0;
 	background-color: #005;
 	position: relative;
+	z-index:30;
 }
 
 #matchHeaderBox div { /* header 박스 안의 text */
