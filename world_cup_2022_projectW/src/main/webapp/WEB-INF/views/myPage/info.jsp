@@ -47,7 +47,7 @@
                                 <tr><td>상세주소</td>
                                     <td colspan="2"><input type="text" name="memAddress2" class="postcodify_details" id="memAddress2" value="${mem.memAddress2}" readonly></td></tr>
                                 <tr><td>포인트</td>
-                                	<td colspan="2"><input type="text" name="memPoint" id="memPoint" value="" readonly></td></tr>
+                                	<td colspan="2"><input type="text" name="pointTotal" id="pointTotal" value="${pointTotal }" readonly></td></tr>
                                 <tr><td colspan="3">
                                 
 								<a href="<c:url value='/myPage/updateMyPageForm/${mem.memId}'/>"><input id="button" type="button" value="회원정보수정" class="btn"></a>

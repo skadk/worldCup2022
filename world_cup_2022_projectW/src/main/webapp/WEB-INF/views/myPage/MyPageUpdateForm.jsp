@@ -49,8 +49,6 @@
                                     <td colspan="2"><input type="text" name="memAddress1" class="postcodify_address" id="memAddress1" value="${mem.memAddress1}" readonly></td></tr>
                                 <tr><td>상세주소 *</td>
                                     <td colspan="2"><input type="text" name="memAddress2" class="postcodify_details" id="memAddress2" value="${mem.memAddress2}"></td></tr>
-								<tr><td>포인트</td>
-                                	<td colspan="2"><input type="text" name="memPoint" id="memPoint" value="" readonly></td></tr>
                                 <tr><td colspan="3">
                                 <input id="button" type="submit" value="수정">
                                 <input id="button" type="reset" value="취소"></td></tr>
