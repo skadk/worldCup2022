@@ -45,6 +45,7 @@
 				<div class='mainBet show'>
 					<img src="<c:url value="/image/background.jpg"/>" width='1280' height='840'>
 					<div class='draw1'>
+						<b class='score1 percent2' id="percent2" name="percent2"></b>
 					</div>
 					<div class='drawtext'>
 						트로피 선택 시 무승부
@@ -56,19 +57,21 @@
 						<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br>
 						<img src="<c:url value="/image/KoreaFB.jpg"/>" width='100' height='100'><br>
 						<h3>대한민국</h3>
-						<b class='score1'>45%</b>
+						<b class='score1 percent1' id="percent1" name="percent1"></b>
 					</div>
 					<div class='rightBet1'>
 						<img src="<c:url value="/image/UruguayPlayer.jpg"/>" width='350' height='550'><br> 
 						<img src="<c:url value="/image/UruguayFB.jpg"/>" width='100' height='100'><br>
 						<h3>우루과이</h3>
-						<b class='score1'>55%</b>
+						<b class='score1 percent3' id="percent3" name="percent3"></b>
 					</div>
 			</div>
 
 			<div class='mainBet'>
 				<img src="<c:url value="/image/background.jpg"/>" width='1280' height='840'>
-				<div class='draw2'></div>
+				<div class='draw2'>
+						<b class='score2 percent2' id="percent2" name="percent2"></b>
+				</div>
 				<div class='drawtext'>트로피 선택 시 무승부</div>
 				<div class='reset'><button class='resetBtn2'>초기화</button></div>
 				
@@ -76,19 +79,21 @@
 					<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br> 
 					<img src="<c:url value="/image/KoreaFB.jpg"/>" width='100' height='100'><br>
 					<h3>대한민국</h3>
-					<b class='score2'>72%</b>
+						<b class='score2 percent1' id="percent1" name="percent1"></b>
 				</div>
 				<div class='rightBet2'>
 					<img src="<c:url value="/image/GhanaPlayer.jpg"/>" width='350' height='550'><br>
 					<img src="<c:url value="/image/GhanaFB.jpg"/>" width='100' height='100'><br>
 					<h3>가나</h3>
-					<b class='score2'>28%</b>
+						<b class='score2 percent3' id="percent3" name="percent3"></b>
 				</div>
 			</div>
 
 			<div class='mainBet'>
 				<img src="<c:url value="/image/background.jpg"/>" width='1280' height='840'>
-				<div class='draw3'></div>
+				<div class='draw3'>
+						<b class='score3 percent2' id="percent2" name="percent2"></b>
+				</div>
 				<div class='drawtext'>트로피 선택 시 무승부</div>
 				<div class='reset'><button class='resetBtn3'>초기화</button></div>
 				
@@ -96,13 +101,13 @@
 					<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br>
 					<img src="<c:url value="/image/KoreaFB.jpg"/>" width='100' height='100'><br>
 					<h3>대한민국</h3>
-					<b class='score3'>33%</b>
+						<b class='score3 percent1' id="percent1" name="percent1"></b>
 				</div>
 				<div class='rightBet3'>
 					<img src="<c:url value="/image/PortugalPlayer.jpg"/>" width='350' height='550'><br> 
 					<img src="<c:url value="/image/PortugalFB.jpg"/>" width='100' height='100'><br>
 					<h3>포르투갈</h3>
-					<b class='score3'>67%</b>
+						<b class='score3 percent3' id="percent3" name="percent3"></b>
 				</div>
 			</div>
 		</div>

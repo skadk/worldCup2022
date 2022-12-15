@@ -9,6 +9,12 @@ import com.world_cup_2022.projectW.model.MemberVO;
 public interface IMatchService {
 
 	public void insertChoice(MatchVO vo); // 팀 선택했을때 memId불러와서 match 123 123으로 기록
+	
+	public int match1Percent1(int matchNo, int matchNation1);
+	
+	public int match1Percent2(int matchNo, int matchNation1);
+	
+	public int match1Percent3(int matchNo, int matchNation1);
 
 	public int checkChoice(int matchNo, String memId); // 중복 체크
 

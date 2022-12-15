@@ -10,9 +10,29 @@
   		VALUES(#{matchNo}, #{matchNation1}, #{matchNation2}, #{memId})
   	</insert>
   	
+  	<!-- match1 퍼센트1 -->
+  	<select id="match1Percent1" parameterType="hashmap" resultType="int">
+	  	SELECT COUNT(*)
+	  	FROM match_game
+	  	WHERE matchNo=#{matchNo} AND matchNation1=#{matchNation1}
+  	</select>
+  	
+  	<!-- match1 퍼센트2 -->
+  	<select id="match1Percent2" parameterType="hashmap" resultType="int">
+	  	SELECT COUNT(*)
+	  	FROM match_game
+	  	WHERE matchNo=#{matchNo} AND matchNation1=#{matchNation1}
+  	</select>
+  	
+  	<!-- match1 퍼센트3 -->
+  	<select id="match1Percent3" parameterType="hashmap" resultType="int">
+	  	SELECT COUNT(*)
+	  	FROM match_game
+	  	WHERE matchNo=#{matchNo} AND matchNation1=#{matchNation1}
+  	</select>
+  	
   	<!-- 동일 승부 예측 중복 확인 -->
-  	<select id="checkChoice" parameterType="hashmap" 
-  								resultType="int">
+  	<select id="checkChoice" parameterType="hashmap" resultType="int">
 	  	SELECT COUNT(*)
 	  	FROM match_game
 	  	WHERE matchNo=#{matchNo} AND memId=#{memId}							
