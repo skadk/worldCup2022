@@ -15,6 +15,12 @@ function signupCheck() {
 		memId.focus();
 		return false;
 	};
+	
+	if($("input[name='checked_id']").val()==''){
+        alert('아이디중복 확인을 해주세요.');
+        $("input[name='checked_id']").eq(0).focus();
+        return false;
+    	}
 
 	if (memPwd.value == "") {
 		alert("비밀번호를 입력하세요.")
