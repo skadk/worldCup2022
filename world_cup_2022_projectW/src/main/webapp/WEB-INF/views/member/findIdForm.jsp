@@ -8,7 +8,7 @@
 		<title>아이디 찾기</title>
 		<!-- head -->
 		<c:import url="/WEB-INF/views/layout/head.jsp"/>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/findId.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/findidpwd.css'/>">
 	</head>
 	<body>
 	<div id="wrap">
@@ -16,7 +16,7 @@
 		<c:import url="/WEB-INF/views/layout/top.jsp"/>
 		<div class="findbox">
 			<div id="findId">
-				<form method="post" action="/member/findId">
+				<form id="findIdPwd" name="findIdPwd" method="post" action="/member/findId">
 					<h1>아이디 찾기</h1>
 						
 					<h4>이름</h4>
