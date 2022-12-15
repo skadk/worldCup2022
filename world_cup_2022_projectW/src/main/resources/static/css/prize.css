@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+#miniwrap {
+	width:1280px;
+	height:2300px;
+	background-color:white;
+}
+
+#bigimage {
+	width:1280px;
+	height:560px;
+}
+
+#bigimage img {
+	float:left;
+	display:block;
+}
+
+/* Prize */
+
+#prizeBox {
+	width:1280px;
+	height:1100px;
+	background:white;
+	padding-top:20px;
+	border-radius:10px;
+}
+
+#prizeBox .prize {
+	width:1280px;
+	margin-top:50px;
+	margin-right:100px;
+}
+
+#prizeBox .prize div {
+	display:block;
+	width:370px;
+	height:400px;
+	border:solid 1px #ccc;
+	margin:10px;
+	background-color:#f9f7f8;
+}
+
+#prdheader {
+	text-align:left;
+	margin-top:30px;
+	margin-left:50px;
+	margin-bottom:20px;
+}
+
+#przList {
+	list-style:none;
+}
+
+#przList li {
+	display:block;
+	float:left;
+}
+#przList li div img {
+	
+	margin-top:55px;
+	cursor:pointer;
+}
+
+#przTitleText {
+	margin-left:11px;
+	text-align:left;
+}
+#needPointText {
+	margin-left:11px;
+	text-align:left;
+	color:#9b9b9b;
+}
+
+#przList li small {
+	margin-left:11px;
+	float:left;
+}
+
+.przBtn {
+	width:30%;
+	height:10%;
+	border:1px solid skyblue;
+	background-color:rgba(0,0,0,0);
+	color:skyblue;
+	padding:5px;
+	margin-top:10px;
+	border-radius: 10px;
+	font-weight:bold;
+}
+
+.przBtn:hover {
+	color:white;
+	background-color:skyblue;
+}
+
+/* -------------------------------------- */
+/* Product */
+
+#productBox {
+	width:1280px;
+	height:1100px;
+	background:white;
+	padding-top:20px;
+	border-radius:10px;
+}
+
+#productBox .product {
+	width:1280px;
+	margin-top:50px;
+	margin-right:100px;
+}
+
+#productBox .product div {
+	display:block;
+	width:370px;
+	height:400px;
+	border:solid 1px #ccc;
+	margin:10px;
+	background-color:#f9f7f8;
+}
+
+#prdheader {
+	text-align:left;
+	margin-top:30px;
+	margin-left:50px;
+	margin-bottom:20px;
+}
+
+#prdList {
+	list-style:none;
+}
+
+#prdList li {
+	display:block;
+	float:left;
+}
+#prdList li div img {
+	
+	margin-top:55px;
+	cursor:pointer;
+}
+
+#prdTitleText {
+	margin-left:11px;
+	text-align:left;
+}
+#needPointText {
+	margin-left:11px;
+	text-align:left;
+	color:#9b9b9b;
+}
+
+#prdList li small {
+	margin-left:11px;
+	float:left;
+}
+
+.prdBtn {
+	width:30%;
+	height:10%;
+	border:1px solid skyblue;
+	background-color:rgba(0,0,0,0);
+	color:skyblue;
+	padding:5px;
+	margin-top:10px;
+	border-radius: 10px;
+	font-weight:bold;
+}
+
+.prdBtn:hover {
+	color:white;
+	background-color:skyblue;
+}

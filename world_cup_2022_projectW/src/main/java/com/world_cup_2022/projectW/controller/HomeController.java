@@ -41,4 +41,10 @@ public class HomeController {
 
 		return "menu/korTeam";
 	}
+	
+	@RequestMapping("/menu/prize")
+	public String prize() {
+		
+		return "menu/prize";
+	}
 }
