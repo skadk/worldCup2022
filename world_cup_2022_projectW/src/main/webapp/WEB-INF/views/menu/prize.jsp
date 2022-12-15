@@ -30,7 +30,7 @@
 			                		<div>
                           
 				                		<img src="<c:url value='/image/ipad.jpg'/>"><br>
-				                		<button id="przBtn1" class="przBtn500">응모하기</button>
+				                		<button id="przBtn1" class="przBtn500 przBtn">응모하기</button>
 
 			                		</div>
 			                			<h3 id="przTitleText">iPad Air 5th Gen</h3>
@@ -41,7 +41,7 @@
 			                		<div>
                           
 				                		<img src="<c:url value='/image/sony.jpg'/>"><br>
-				                		<button id="przBtn2" class="przBtn500">응모하기</button>
+				                		<button id="przBtn2" class="przBtn500 przBtn">응모하기</button>
 
 			                		</div>
 			                			<h3 id="przTitleText">Sony WH-1000XM4</h3>
@@ -52,7 +52,7 @@
 			                		<div>
 
 				                		<img src="<c:url value='/image/airpod.jpg'/>"><br>
-				                		<button id="przBtn3" class="przBtn500">응모하기</button>
+				                		<button id="przBtn3" class="przBtn500 przBtn">응모하기</button>
 
 			                		</div>
 			                			<h3 id="przTitleText">AirPods Pro 2</h3>
@@ -63,7 +63,7 @@
 		                			<div>
 
 				                		<img src="<c:url value='/image/축구화.jpg'/>"> <br>
-				                		<button id="przBtn4" class="przBtn1000">응모하기</button>
+				                		<button id="przBtn4" class="przBtn1000 przBtn">응모하기</button>
 
 				                	</div>
 				                		<h3 id="przTitleText">메시 축구화</h3>
@@ -74,7 +74,7 @@
 		                			<div>
                           
 				                		<img src="<c:url value='/image/budspro2.jpg'/>"> <br>
-				                		<button id="przBtn5" class="przBtn1000">응모하기</button>
+				                		<button id="przBtn5" class="przBtn1000 przBtn">응모하기</button>
 
 			                		</div>
 			                			<h3 id="przTitleText">Buds Pro 2</h3>
@@ -85,7 +85,7 @@
 		                			<div>
                           
 				                		<img src="<c:url value='/image/ball.jpg'/>"> <br>
-				                		<button id="przBtn6" class="przBtn1000">응모하기</button>
+				                		<button id="przBtn6" class="przBtn1000 przBtn">응모하기</button>
 
 
 				                	</div>
@@ -106,7 +106,7 @@
 
 
 				                		<img src="<c:url value='/image/굿즈_홈유니폼.jpg'/>"> <br>
-				                		<button id="prdBtn1" class="przBtn10000">주문하기</button>
+				                		<button id="prdBtn1" class="przBtn10000 przBtn">주문하기</button>
 
 			                		</div>
 			                			<h3 id="prdTitleText">대한민국 축구 국가대표 홈 유니폼</h3>
@@ -117,7 +117,7 @@
 			                		<div>
 
 				                		<img src="<c:url value='/image/굿즈_어웨이유니폼.jpg'/>"> <br>
-				                		<button id="prdBtn2" class="przBtn10000">주문하기</button>
+				                		<button id="prdBtn2" class="przBtn10000 przBtn">주문하기</button>
                             
 			                		</div>
 			                			<h3 id="prdTitleText">대한민국 축구 국가대표 어웨이 유니폼</h3>
@@ -128,7 +128,7 @@
 			                		<div>
                           
 				                		<img src="<c:url value='/image/굿즈_트로피.jpg'/>"> <br>
-				                		<button id="prdBtn3" class="przBtn10000">주문하기</button>
+				                		<button id="prdBtn3" class="przBtn10000 przBtn">주문하기</button>
 
 			                		</div>
 			                			<h3 id="prdTitleText">카타르 월드컵 한정판 공식 트로피</h3>
@@ -139,7 +139,7 @@
 		                			<div>
                           
 				                		<img src="<c:url value='/image/굿즈_커피포트.jpg'/>"> <br>
-				                		<button id="prdBtn4" class="przBtn20000">주문하기</button>
+				                		<button id="prdBtn4" class="przBtn20000 przBtn">주문하기</button>
 
 				                	</div>
 				                		<h3 id="prdTitleText">카타르 월드컵 황동 커피포트</h3>
@@ -149,7 +149,7 @@
 		                			<div>
 
 				                		<img src="<c:url value='/image/굿즈_향수.jpg'/>"> <br>
-				                		<button id="prdBtn5" class="przBtn20000">주문하기</button>
+				                		<button id="prdBtn5" class="przBtn20000 przBtn">주문하기</button>
 
 				                	</div>
 				                		<h3 id="prdTitleText">카타르 월드컵 코파 먼디알 알자지라 향수</h3>
@@ -160,7 +160,7 @@
 		                			<div>
                           
 				                		<img src="<c:url value='/image/굿즈_마스코트피규어.jpg'/>"> <br>
-				                		<button id="prdBtn6" class="przBtn20000">주문하기</button>
+				                		<button id="prdBtn6" class="przBtn20000 przBtn">주문하기</button>
 
 
 			                		</div>
