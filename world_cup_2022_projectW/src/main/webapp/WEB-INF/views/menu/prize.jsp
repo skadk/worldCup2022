@@ -28,8 +28,10 @@
                 			<ul id="przList">
                 				<li>
 			                		<div>
-				                		<img src="../image/ipad.jpg"> <br>
+                          
+				                		<img src="<c:url value='/image/ipad.jpg'/>"><br>
 				                		<button id="przBtn1" class="przBtn500">응모하기</button>
+
 			                		</div>
 			                			<h3 id="przTitleText">iPad Air 5th Gen</h3>
 				                		<h4 id='needPointText'>1000포인트</h4>
@@ -37,8 +39,10 @@
                 				</li>
 		                		<li>
 			                		<div>
-				                		<img src="../image/sony.jpg"> <br>
+                          
+				                		<img src="<c:url value='/image/sony.jpg'/>"><br>
 				                		<button id="przBtn2" class="przBtn500">응모하기</button>
+
 			                		</div>
 			                			<h3 id="przTitleText">Sony WH-1000XM4</h3>
 				                		<h4 id='needPointText'>800포인트</h4>
@@ -46,8 +50,10 @@
 		                		</li>
 		                		<li>
 			                		<div>
-				                		<img src="../image/airpod.jpg"> <br>
+
+				                		<img src="<c:url value='/image/airpod.jpg'/>"><br>
 				                		<button id="przBtn3" class="przBtn500">응모하기</button>
+
 			                		</div>
 			                			<h3 id="przTitleText">AirPods Pro 2</h3>
 				                		<h4 id='needPointText'>600포인트</h4>
@@ -55,8 +61,10 @@
 		                		</li>
 		                		<li>
 		                			<div>
-				                		<img src="../image/축구화.jpg"> <br>
+
+				                		<img src="<c:url value='/image/축구화.jpg'/>"> <br>
 				                		<button id="przBtn4" class="przBtn1000">응모하기</button>
+
 				                	</div>
 				                		<h3 id="przTitleText">메시 축구화</h3>
 				                		<h4 id='needPointText'>500포인트</h4>
@@ -64,8 +72,10 @@
 		                		</li>
 		                		<li>
 		                			<div>
-				                		<img src="../image/budspro2.jpg"> <br>
+                          
+				                		<img src="<c:url value='/image/budspro2.jpg'/>"> <br>
 				                		<button id="przBtn5" class="przBtn1000">응모하기</button>
+
 			                		</div>
 			                			<h3 id="przTitleText">Buds Pro 2</h3>
 				                		<h4 id='needPointText'>400포인트</h4>
@@ -73,8 +83,11 @@
 		                		</li>
 		                		<li>
 		                			<div>
-				                		<img src="../image/ball.jpg"> <br>
+                          
+				                		<img src="<c:url value='/image/ball.jpg'/>"> <br>
 				                		<button id="przBtn6" class="przBtn1000">응모하기</button>
+
+
 				                	</div>
 				                		<h3 id="przTitleText">World Cup Ball</h3>
 				                		<h4 id='needPointText'>200포인트</h4>
@@ -90,8 +103,11 @@
                 			<ul id="prdList">
                 				<li>
 			                		<div>
-				                		<img src="../image/굿즈_홈유니폼.jpg"> <br>
+
+
+				                		<img src="<c:url value='/image/굿즈_홈유니폼.jpg'/>"> <br>
 				                		<button id="prdBtn1" class="przBtn10000">주문하기</button>
+
 			                		</div>
 			                			<h3 id="prdTitleText">대한민국 축구 국가대표 홈 유니폼</h3>
 				                		<h4 id='needPointText'>109,000원</h4>
@@ -99,8 +115,10 @@
                 				</li>
 		                		<li>
 			                		<div>
-				                		<img src="../image/굿즈_어웨이유니폼.jpg"> <br>
+
+				                		<img src="<c:url value='/image/굿즈_어웨이유니폼.jpg'/>"> <br>
 				                		<button id="prdBtn2" class="przBtn10000">주문하기</button>
+                            
 			                		</div>
 			                			<h3 id="prdTitleText">대한민국 축구 국가대표 어웨이 유니폼</h3>
 				                		<h4 id='needPointText'>109,000원</h4>
@@ -108,8 +126,10 @@
 		                		</li>
 		                		<li>
 			                		<div>
-				                		<img src="../image/굿즈_트로피.jpg"> <br>
+                          
+				                		<img src="<c:url value='/image/굿즈_트로피.jpg'/>"> <br>
 				                		<button id="prdBtn3" class="przBtn10000">주문하기</button>
+
 			                		</div>
 			                			<h3 id="prdTitleText">카타르 월드컵 한정판 공식 트로피</h3>
 				                		<h4 id='needPointText'>400,000원</h4>
@@ -117,16 +137,20 @@
 		                		</li>
 		                		<li>
 		                			<div>
-				                		<img src="../image/굿즈_커피포트.jpg"> <br>
+                          
+				                		<img src="<c:url value='/image/굿즈_커피포트.jpg'/>"> <br>
 				                		<button id="prdBtn4" class="przBtn20000">주문하기</button>
+
 				                	</div>
 				                		<h3 id="prdTitleText">카타르 월드컵 황동 커피포트</h3>
 				                		<h4 id='needPointText'>89,000원</h4>
 		                		</li>
 		                		<li>
 		                			<div>
-				                		<img src="../image/굿즈_향수.jpg"> <br>
+
+				                		<img src="<c:url value='/image/굿즈_향수.jpg'/>"> <br>
 				                		<button id="prdBtn5" class="przBtn20000">주문하기</button>
+
 				                	</div>
 				                		<h3 id="prdTitleText">카타르 월드컵 코파 먼디알 알자지라 향수</h3>
 				                		<h4 id='needPointText'>179,000원</h4>
@@ -134,8 +158,11 @@
 		                		</li>
 		                		<li>
 		                			<div>
-				                		<img src="../image/굿즈_마스코트피규어.jpg"> <br>
+                          
+				                		<img src="<c:url value='/image/굿즈_마스코트피규어.jpg'/>"> <br>
 				                		<button id="prdBtn6" class="przBtn20000">주문하기</button>
+
+
 			                		</div>
 			                			<h3 id="prdTitleText">카타르 월드컵 공식 마스코트 피규어</h3>
 				                		<h4 id='needPointText'>49,900원</h4>
