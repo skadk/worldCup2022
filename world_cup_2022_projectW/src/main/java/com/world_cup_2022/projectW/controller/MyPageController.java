@@ -20,10 +20,7 @@ public class MyPageController {
 	// http://localhost:8080/myPage/detailViewMyPage/{memId}
 
 	@RequestMapping("/myPage/detailViewMyPage/{memId}")
-
 	public String detailViewMyPage(@PathVariable String memId, Model model) {
-
-	
 		
 		MemberVO mem = service.detailViewMyPage(memId);
 		model.addAttribute("mem", mem);
@@ -49,22 +46,13 @@ public class MyPageController {
 	//회원 정보 수정 : 수정된 데이터 DB에 저장
 		@RequestMapping("/myPage/updateMyPage")
 		public String updateMyPage(MemberVO mem, Model model) {
+			service.updateMyPage(mem);
 			
-			service.updateMyPage(mem);		
-            model.addAttribute("mem",mem);			
+            model.addAttribute("mem",mem);
 			// 수정된 데이터 저장 후 회원 조회 화면으로 포워딩  
-			return "mainIndex";
+            
+			return "myPage/info";
 		}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 
