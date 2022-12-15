@@ -19,16 +19,28 @@
 	$('#prevButton').on('click', function(){
 		if(movedIndex !=0)  // 첫 번째가 아니면
 			movedIndex = movedIndex - 1; // 인덱스 값 - 1
+		else
+			movedIndex = 2;
 		
 		moveSlide(movedIndex);  // 실제로 슬라이드 패널을 움직이는 함수 호출하면 계산된 인덱스값 전달
+		
+		$('.controlButton').attr('src', '/image/controlButton1.png');
+		
+		$('.controlButton').eq(movedIndex).attr('src', '/image/controlButton2.png');
 	});	
 	
 	// next 버튼 클릭하면 뒤로 이동
 	$('#nextButton').on('click', function(){
 		if(movedIndex != 2)  // 마지막이 아니면
 			movedIndex = movedIndex + 1; // 인덱스 값 + 1
+		else
+			movedIndex = 0;
 		
 		moveSlide(movedIndex); // 실제로 슬라이드 패널을 움직이는 함수 호출하면 계산된 인덱스값 전달
+		
+		$('.controlButton').attr('src', '/image/controlButton1.png');
+		
+		$('.controlButton').eq(movedIndex).attr('src', '/image/controlButton2.png');
 	});
 	
 	// 초기 슬라이더 위치 랜덤하게 지정
