@@ -74,6 +74,7 @@ public class MemberController {
 	}
 	
 	// 아이디 찾기위해 이름 이메일 입력 확인
+	@ResponseBody
 	@RequestMapping("/member/findId")
 	public String findId(@RequestParam("findIdName") String memName,
 						 @RequestParam("findIdEmail") String memEmail,
@@ -82,9 +83,13 @@ public class MemberController {
 		String result = service.findId(memName, memEmail);
 		model.addAttribute("id", result);
 		
+		if (result != null) {
+			return result;
+		} else {
+			result = "fail";
+			return result;			
+		}
 		
-		
-		return "member/login";
 	}
 
 	// 비밀번호 찾기 폼 이동
