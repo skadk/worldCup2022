@@ -21,6 +21,7 @@ public class MyPageController {
 
 	@RequestMapping("/myPage/detailViewMyPage/{memId}")
 	public String detailViewProduct(@PathVariable String memId, Model model) {
+		
 		MemberVO mem = service.detailViewMyPage(memId);
 		model.addAttribute("mem", mem);
 
