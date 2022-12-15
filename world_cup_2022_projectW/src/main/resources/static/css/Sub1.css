@@ -4,6 +4,11 @@ body {
 	width: 1920px;
 }
 
+.MenuFixed {
+	position: fixed;
+	top: 100px;
+}
+
 #position ul li a {
 	text-decoration: none;
 	color: blue;
