@@ -29,5 +29,24 @@
   		WHERE memId=#{memId}
   	</update>
   	
+  	<!-- 포인트 변동 사항 넣기 -->
+  	<insert id="changePoint2" parameterType="hashmap">
+  		INSERT INTO point_change(memId, pointUsed, pointDescription)
+  		VALUES (#{memId}, #{pointUsed}, #{pointDescription})
+  	</insert>
+  	
+  	<!-- 총 포인트 업데이트 -->
+  	<update id="updatePoint2" parameterType="hashmap">
+  		UPDATE point_all
+  		SET pointTotal = pointTotal-#{pointUsed}
+  		WHERE memId=#{memId}
+  	</update>
+  	
+	<!-- 총 포인트 가져오기 -->
+  	<select id="pointTotalCheck" parameterType="string" resultType="int">
+		SELECT pointTotal
+		FROM point_all
+		WHERE memId=#{memId}
+	</select>
   </mapper>
   

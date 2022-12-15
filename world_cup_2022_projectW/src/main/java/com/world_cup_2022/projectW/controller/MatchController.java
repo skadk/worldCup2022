@@ -134,7 +134,6 @@ public class MatchController {
 				
 				pservice.changePoint(mem.getMemId(), pointAdd, pointDescription);
 				pservice.updatePoint(mem.getMemId(), pointAdd);
-				System.out.println(mem.getMemId());
 			}
 		}
 

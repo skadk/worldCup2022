@@ -11,4 +11,10 @@ public interface IPointDAO {
 	public void changePoint(HashMap<String, Object> map);
 	
 	public void updatePoint(HashMap<String, Object> map);
+	
+	public void changePoint2(HashMap<String, Object> map);
+	
+	public void updatePoint2(HashMap<String, Object> map);
+	
+	public int pointTotalCheck(String memId);
 }

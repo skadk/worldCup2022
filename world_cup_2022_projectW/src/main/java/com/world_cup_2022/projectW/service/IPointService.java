@@ -9,4 +9,10 @@ public interface IPointService {
 	public void changePoint(String memId, int pointAdd, String pointDescription);
 	
 	public void updatePoint(String memId, int pointAdd);
+	
+	public void changePoint2(String memId, int pointUsed, String pointDescription);
+	
+	public void updatePoint2(String memId, int pointUsed);
+	
+	public int pointTotalCheck(String memId);
 }

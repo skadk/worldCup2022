@@ -47,4 +47,33 @@ public class PointService implements IPointService {
 		dao.updatePoint(map);
 		
 	}
+
+	@Override
+	public void changePoint2(String memId, int pointUsed, String pointDescription) {
+		
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("memId", memId);
+		map.put("pointUsed", pointUsed);
+		map.put("pointDescription", pointDescription);
+
+		dao.changePoint2(map);
+		
+	}
+
+	@Override
+	public void updatePoint2(String memId, int pointUsed) {
+		
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("memId", memId);
+		map.put("pointUsed", pointUsed);
+
+		dao.updatePoint2(map);
+		
+	}
+
+	@Override
+	public int pointTotalCheck(String memId) {
+		
+		return dao.pointTotalCheck(memId);
+	}
 }
