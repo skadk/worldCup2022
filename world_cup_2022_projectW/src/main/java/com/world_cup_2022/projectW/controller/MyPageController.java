@@ -20,7 +20,11 @@ public class MyPageController {
 	// http://localhost:8080/myPage/detailViewMyPage/{memId}
 
 	@RequestMapping("/myPage/detailViewMyPage/{memId}")
+
 	public String detailViewMyPage(@PathVariable String memId, Model model) {
+
+	
+		
 		MemberVO mem = service.detailViewMyPage(memId);
 		model.addAttribute("mem", mem);
 

@@ -69,6 +69,7 @@ public class MemberController {
 	// 아이디 찾기 폼 이동
 	@RequestMapping("/member/findIdForm")
 	public String findIdForm() {
+		
 		return "member/findIdForm";
 	}
 	
@@ -81,12 +82,15 @@ public class MemberController {
 		String result = service.findId(memName, memEmail);
 		model.addAttribute("id", result);
 		
+		
+		
 		return "member/login";
 	}
 
 	// 비밀번호 찾기 폼 이동
 	@RequestMapping("/member/findPwdForm")
 	public String findPwdForm() {
+		
 		return "member/findPwdForm";
 	}
 	
