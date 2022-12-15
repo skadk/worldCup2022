@@ -52,9 +52,15 @@ public class MatchController {
 		
 		// service.matchFind(vo.getMatchNo());
 		
-		System.out.println(vo.getMatchNo());
-		System.out.println(vo.getMatchNation1());
-		System.out.println(mrList.get(0));
+		System.out.println(mrList.get(0).getMatchNo());
+		System.out.println(mrList.get(0).getMatchNation1());
+		System.out.println(mrList.get(0).getMatchNation2());
+		System.out.println(mrList.get(1).getMatchNo());
+		System.out.println(mrList.get(1).getMatchNation1());
+		System.out.println(mrList.get(1).getMatchNation2());
+		System.out.println(mrList.get(2).getMatchNo());
+		System.out.println(mrList.get(2).getMatchNation1());
+		System.out.println(mrList.get(2).getMatchNation2());
 		System.out.println("01231564");
 
 		return "menu/match";

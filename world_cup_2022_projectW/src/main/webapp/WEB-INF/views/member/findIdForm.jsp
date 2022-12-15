@@ -26,6 +26,7 @@
 					<h4>이메일</h4>
 					<span class="input_area"><input type="text" maxlength="30" id="findIdEmail" name="findIdEmail" 
 					placeholder="이메일을 입력해 주세요." required></span>
+					
 					<button type="submit">찾기</button>
 					<button type="button" onClick="history.back()">취소</button>
 				</form>
