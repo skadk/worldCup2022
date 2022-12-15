@@ -18,8 +18,7 @@
 			<div id="matchHeaderBox">
 				<div>
 					승부 예측
-					<button id="matchBtn">승부예측완료</button>
-					<button id="pointBtn">포인트 지급</button>
+					<button id="matchBtn" class="matchBtn">승부예측완료</button>
 				</div>
 			</div>
 			<div id="mainTabBox">
@@ -51,7 +50,7 @@
 						트로피 선택 시 무승부
 					</div>
 					<div class='reset'>
-						<button class='resetBtn1'>초기화</button>
+						<button class='resetBtn1 Btn'>초기화</button>
 					</div>
 					<div class='leftBet1'>
 						<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br>
@@ -73,7 +72,7 @@
 						<b class='score2 percent2' id="percent2" name="percent2"></b>
 				</div>
 				<div class='drawtext'>트로피 선택 시 무승부</div>
-				<div class='reset'><button class='resetBtn2'>초기화</button></div>
+				<div class='reset'><button class='resetBtn2 Btn'>초기화</button></div>
 				
 				<div class='leftBet2'>
 					<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br> 
@@ -95,7 +94,7 @@
 						<b class='score3 percent2' id="percent2" name="percent2"></b>
 				</div>
 				<div class='drawtext'>트로피 선택 시 무승부</div>
-				<div class='reset'><button class='resetBtn3'>초기화</button></div>
+				<div class='reset'><button class='resetBtn3 Btn'>초기화</button></div>
 				
 				<div class='leftBet3'>
 					<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br>
