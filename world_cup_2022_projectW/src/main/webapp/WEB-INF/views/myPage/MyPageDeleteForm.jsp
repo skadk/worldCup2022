@@ -39,7 +39,7 @@
 							<tr><td>회원아이디</td>
 									<td><input type="text" name="memId" value="${mem.memId}" readonly></td></tr>
 							<tr><td>비밀번호</td>
-									<td><input type="password" name="memPwd"></td></tr>								
+									<td><input type="password" name="memPwd" required></td></tr>								
 							<tr><td colspan="2">
 								<input id="button" type="submit" value="탈퇴 확인">
 							    <input id="button" type="reset" value="취소"></td></tr>

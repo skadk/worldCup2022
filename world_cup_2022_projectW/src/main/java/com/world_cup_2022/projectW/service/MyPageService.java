@@ -39,10 +39,10 @@ public class MyPageService implements IMyPageService {
 		// 암호화된 비밀번호와 입력해서 전달된 비밀번호와 일치하는지 확인
 		if (encodedPw != null && passwordEncoder.matches((String) mem.getMemPwd(), encodedPw)) {
 			result = mem.getMemId();
-			System.out.println(mem.getMemPwd());
-			System.out.println(result);
+
 			dao.realDelete1(result);
 		}
+			
 	}
 
 }

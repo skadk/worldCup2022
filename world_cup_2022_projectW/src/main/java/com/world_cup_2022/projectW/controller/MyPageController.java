@@ -60,9 +60,11 @@ public class MyPageController {
 	// 회원 탈퇴 페이지
 	@RequestMapping("/myPage/deleteMyPage")
 	public String deleteMyPage(MemberVO mem, Model model, HttpSession session) {
-
-		session.invalidate();
+		
+		
 		service.deleteMyPage(mem);
+		
+		session.invalidate();
 		// 수정된 데이터 저장 후 회원 조회 화면으로 포워딩
 
 		return "redirect:/";
