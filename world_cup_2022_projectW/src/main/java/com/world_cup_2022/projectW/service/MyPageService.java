@@ -2,6 +2,7 @@ package com.world_cup_2022.projectW.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.world_cup_2022.projectW.dao.IMyPageDAO;
@@ -14,23 +15,34 @@ public class MyPageService implements IMyPageService {
 	@Qualifier("IMyPageDAO")
 	private IMyPageDAO dao;
 
+	@Autowired
+	private PasswordEncoder passwordEncoder;
+
 	@Override
 	public MemberVO detailViewMyPage(String memId) {
 
 		return dao.detailViewMyPage(memId);
 	}
 
-		@Override
-		public void memberDelete(MemberVO vo)throws Exception{
-			dao.memberDelete(vo);
-		}
-
 	@Override
 	public void updateMyPage(MemberVO mem) {
 		dao.updateMyPage(mem);
 	}
 
+	@Override
+	public void deleteMyPage(MemberVO mem) {
+		// 전달된 아이디로 암호화된 비밀번호 알아오기
+		String encodedPw = dao.deleteMyPage(mem);
+		System.out.println(encodedPw);
 
-
+		String result = "fail";
+		// 암호화된 비밀번호와 입력해서 전달된 비밀번호와 일치하는지 확인
+		if (encodedPw != null && passwordEncoder.matches((String) mem.getMemPwd(), encodedPw)) {
+			result = mem.getMemId();
+			System.out.println(mem.getMemPwd());
+			System.out.println(result);
+			dao.realDelete1(result);
+		}
+	}
 
 }

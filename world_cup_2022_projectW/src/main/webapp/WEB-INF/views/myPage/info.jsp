@@ -26,11 +26,8 @@
 					<tr><td>상세주소  </td><td>${mem.memAddress2}</td></tr>
 					<tr><td>포인트  </td><td>${mem.memPoint }</td></tr>
 				</table><br><br>
-					<input type="button" value="회원정보수정" class="btn" onclick="location.href='/myPage/updateForm'">
-					<input type="button" value="로그아웃" class="btn" onclick="location.href='/member/logout'">
-					<input type="button" value="회원탈퇴" class="btn" onclick="location.href='/myPage/myPageDeleteView'">
 					<a href="<c:url value='/myPage/updateMyPageForm/${mem.memId}'/>"><input type="button" value="회원정보수정" class="btn"></a>
-					<input type="button" value="회원탈퇴" class="btn" onclick="location.href='/myPage/deleteForm'">
+					<a href="<c:url value='/myPage/deleteMyPageForm/${mem.memId}'/>"><input type="button" value="회원탈퇴" class="btn"></a>
 				<br><br>
 				</form>
 				
