@@ -27,7 +27,7 @@ public class MatchController {
 
 	// 승부예측 추가
 	@RequestMapping("/match/insert")
-	public void insert(MatchVO vo,
+	public String insert(MatchVO vo,
 						 @RequestParam("matchNo") int matchNo,
 						 @RequestParam("matchNation1") int matchNation1,
 						 @RequestParam("matchNation2") int matchNation2,
@@ -46,6 +46,8 @@ public class MatchController {
 		} else {
 			service.updateChoice(vo);
 		}
+		
+		return "menu/match";
 	}
 	
 	// 승부예측 추가

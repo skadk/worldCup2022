@@ -149,8 +149,7 @@ $(document).ready(function() {
 				$(".percent1").text(percent1_1 + "%");
 			},
 			error:function() {
-				alert("로그인 하고 해주세요");
-				location.href="/member/login";
+
 			}
 		}); // ajax 종료
 	});
@@ -167,8 +166,7 @@ $(document).ready(function() {
 				$(".percent2").text(percent2_1 + "%");
 			},
 			error:function() {
-				alert("로그인 하고 해주세요");
-				location.href="/member/login";
+
 			}
 		}); // ajax 종료
 	});
@@ -185,8 +183,7 @@ $(document).ready(function() {
 				$(".percent3").text(percent3_1 + "%");
 			},
 			error:function() {
-				alert("로그인 하고 해주세요");
-				location.href="/member/login";
+
 			}
 		}); // ajax 종료
 	});
