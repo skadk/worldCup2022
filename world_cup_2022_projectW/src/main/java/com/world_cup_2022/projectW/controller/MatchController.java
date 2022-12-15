@@ -26,9 +26,8 @@ public class MatchController {
 	private PointService pservice;
 
 	// 승부예측 추가
-	@ResponseBody
 	@RequestMapping("/match/insert")
-	public int insert(MatchVO vo,
+	public void insert(MatchVO vo,
 						 @RequestParam("matchNo") int matchNo,
 						 @RequestParam("matchNation1") int matchNation1,
 						 @RequestParam("matchNation2") int matchNation2,
@@ -47,8 +46,22 @@ public class MatchController {
 		} else {
 			service.updateChoice(vo);
 		}
+	}
+	
+	// 승부예측 추가
+	@ResponseBody
+	@RequestMapping("/match/percent1")
+	public int percent1(MatchVO vo,
+			@RequestParam("matchNo") int matchNo,
+			@RequestParam("matchNation1") int matchNation1,
+			@RequestParam("matchNation2") int matchNation2,
+			HttpSession session) {
+		vo.setMatchNo(matchNo);
+		vo.setMatchNation1(matchNation1);
+		vo.setMatchNation2(matchNation2);
+		vo.setMemId((String)session.getAttribute("sid"));
 		
-		int percent1 = service.match1Percent1(vo.getMatchNo(), 2);		
+		int percent1 = service.match1Percent1(vo.getMatchNo(), 2);
 		int percent2 = service.match1Percent2(vo.getMatchNo(), 1);
 		int percent3 = service.match1Percent3(vo.getMatchNo(), 0);
 		
@@ -69,16 +82,6 @@ public class MatchController {
 		vo.setMatchNation1(matchNation1);
 		vo.setMatchNation2(matchNation2);
 		vo.setMemId((String)session.getAttribute("sid"));
-		
-		String memId = (String)session.getAttribute("sid");
-		
-		int check = service.checkChoice(vo.getMatchNo(), memId);
-		
-		if (check == 0) {
-			service.insertChoice(vo);
-		} else {
-			service.updateChoice(vo);
-		}
 		
 		int percent1 = service.match1Percent1(vo.getMatchNo(), 2);
 		int percent2 = service.match1Percent2(vo.getMatchNo(), 1);
@@ -101,16 +104,6 @@ public class MatchController {
 		vo.setMatchNation1(matchNation1);
 		vo.setMatchNation2(matchNation2);
 		vo.setMemId((String)session.getAttribute("sid"));
-		
-		String memId = (String)session.getAttribute("sid");
-		
-		int check = service.checkChoice(vo.getMatchNo(), memId);
-		
-		if (check == 0) {
-			service.insertChoice(vo);
-		} else {
-			service.updateChoice(vo);
-		}
 		
 		int percent1 = service.match1Percent1(vo.getMatchNo(), 2);
 		int percent2 = service.match1Percent2(vo.getMatchNo(), 1);
@@ -142,17 +135,6 @@ public class MatchController {
 				System.out.println(mem.getMemId());
 			}
 		}
-		
-		//System.out.println(memId);
-//		System.out.println(mrList.get(0).getMatchNo());
-//		System.out.println(mrList.get(0).getMatchNation1());
-//		System.out.println(mrList.get(0).getMatchNation2());
-//		System.out.println(mrList.get(1).getMatchNo());
-//		System.out.println(mrList.get(1).getMatchNation1());
-//		System.out.println(mrList.get(1).getMatchNation2());
-//		System.out.println(mrList.get(2).getMatchNo());
-//		System.out.println(mrList.get(2).getMatchNation1());
-//		System.out.println(mrList.get(2).getMatchNation2());
 
 		return "menu/match";
 	}

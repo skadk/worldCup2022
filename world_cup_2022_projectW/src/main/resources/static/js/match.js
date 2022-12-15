@@ -127,9 +127,25 @@ $(document).ready(function() {
 			data:{"matchNo":matchNo,
 				  "matchNation1":nation1,
 				  "matchNation2":nation2},
+			success:function() {
+				alert("승부 예측 완료");
+			},
+			error:function() {
+				alert("로그인 하고 해주세요");
+				location.href="/member/login";
+			}
+		}); // ajax 종료
+	});
+	
+	$('#matchBtn').on('click', function() {
+		$.ajax({
+			type:"post",
+			url:"/match/percent1",
+			data:{"matchNo":matchNo,
+				  "matchNation1":nation1,
+				  "matchNation2":nation2},
 			dataType:"text",
 			success:function(percent1_1) {
-				alert("승부 예측 완료");
 				$(".percent1").text(percent1_1 + "%");
 			},
 			error:function() {
