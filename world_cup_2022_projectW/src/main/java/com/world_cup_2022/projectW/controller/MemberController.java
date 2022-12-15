@@ -87,7 +87,7 @@ public class MemberController {
 			return result;
 		} else {
 			result = "fail";
-			return result;			
+			return result;		
 		}
 		
 	}

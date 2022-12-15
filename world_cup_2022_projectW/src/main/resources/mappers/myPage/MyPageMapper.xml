@@ -16,12 +16,11 @@
 	</delete>
 
 	 
-	
 	 <!-- 회원 정보 수정 : 기본키인 memId는 수정하지 않음 -->
      <update id="updateMyPage"  parameterType="com.world_cup_2022.projectW.model.MemberVO">
   		UPDATE member
   		SET memName=#{memName}, memHP=#{memHP}, memEmail=#{memEmail},
   			   memZipcode=#{memZipcode}, memAddress1=#{memAddress1},memAddress2=#{memAddress2}
-  	    WHERE memId=#{memId}
+  	    WHERE memName=#{memName}
       </update>	
  </mapper>

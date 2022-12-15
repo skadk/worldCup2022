@@ -27,9 +27,7 @@ public class MyPageService implements IMyPageService {
 
 	@Override
 	public void updateMyPage(MemberVO mem) {
-
 		dao.updateMyPage(mem);
-
 	}
 
 

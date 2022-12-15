@@ -26,19 +26,21 @@
 			<hr>
 			<form method="post" action="<c:url value='/myPage/updateMyPage'/>">
 				<table>
+					<tr><td>회원아이디</td>
+							<td><input type="text" name="memId" value="${mem.memId }" readonly></td></tr>
 					<tr><td>회원명</td>
-							<td><input type="text" name="memName" value="${mem.memName }"></td></tr>
+							<td><input type="text" name="memName" value="${mem.memName }" readonly></td></tr>
 					<tr><td>전화번호  </td>
-							<td><input type="text" name="memHP"  value="${mem.memHP }" ></td></tr>
+							<td><input type="text" name="memHP" value="${mem.memHP }"></td></tr>
 					<tr><td>이메일  </td>
-							<td><input type="text" name="memEmail"   value="${mem.memEmail}" ></td></tr>
+							<td><input type="text" name="memEmail" value="${mem.memEmail}" ></td></tr>
 					<tr><td>우편번호 </td>
-							<td> <input type="text" name="memZipcode" class="postcodify_postcode" id="memZipcode" readonly>
+							<td> <input type="text" name="memZipcode" class="postcodify_postcode" id="memZipcode" value="${mem.memZipcode}" readonly>
 						<button type="button" id="postcodify_search_button">검색</button></td></tr>
 					<tr><td>도로명주소</td>
-						<td><input type="text" name="memAddress1" class="postcodify_address" id="memAddress1" readonly></td></tr>
+						<td><input type="text" name="memAddress1" class="postcodify_address" id="memAddress1" value="${mem.memAddress1}"  readonly></td></tr>
 					<tr><td>상세주소</td>
-						<td><input type="text" name="memAddress2" class="postcodify_details" id="memAddress2"></td></tr>		
+						<td><input type="text" name="memAddress2" class="postcodify_details" id="memAddress2" value="${mem.memAddress2}"></td></tr>		
 					
 					<tr><td colspan="2">
 					<input type="submit" value="수정">
