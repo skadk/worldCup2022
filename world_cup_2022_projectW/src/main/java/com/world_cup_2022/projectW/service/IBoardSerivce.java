@@ -1,9 +1,11 @@
 package com.world_cup_2022.projectW.service;
 
 import com.world_cup_2022.projectW.model.BoardVO;
-
+import com.world_cup_2022.projectW.model.MemberVO;
 public interface IBoardSerivce {
 	public String insertBoard(BoardVO vo); // 글 쓰기
 	public String deleteBoard(String memId); // 글 삭제
-	public String updateBoard(String memId); // 글 수정
+	public MemberVO getMemberInfo(String memId);//게시판에 출력할 회원정보 받아오기
+	public BoardVO getBoardInfo(String boardNo);
+
 }
