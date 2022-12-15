@@ -20,13 +20,17 @@ public class MyPageService implements IMyPageService {
 		return dao.detailViewMyPage(memId);
 	}
 
+		@Override
+		public void memberDelete(MemberVO vo)throws Exception{
+			dao.memberDelete(vo);
+		}
+
 	@Override
 	public void updateMyPage(MemberVO mem) {
 
 		dao.updateMyPage(mem);
 
 	}
-
 
 
 
