@@ -20,24 +20,48 @@ public class MyPageController {
 	// http://localhost:8080/myPage/detailViewMyPage/{memId}
 
 	@RequestMapping("/myPage/detailViewMyPage/{memId}")
-	public String detailViewProduct(@PathVariable String memId, Model model) {
+	public String detailViewMyPage(@PathVariable String memId, Model model) {
 		MemberVO mem = service.detailViewMyPage(memId);
 		model.addAttribute("mem", mem);
 
 		return "myPage/info";
 	}
+	
+	/* ---------------------------------- */
+	
+	/* 회원정보 수정 */
 
-	@RequestMapping("/myPage/updateMyPageForm/{memId}") public String
-	  updateProductForm(@PathVariable String memId, Model model) { // 서비스에게 상품번호
+	@RequestMapping("/myPage/updateMyPageForm/{memId}") 
+	public String updateMyPageForm(@PathVariable String memId, Model model) { 
+	  // 서비스에게 memId
 	  //전달하고 상품 정보 받아옴
 	  MemberVO mem = service.detailViewMyPage(memId);
-	  model.addAttribute("mem", mem); return "myPage/MyPageUpdateForm"; }
+	  model.addAttribute("mem", mem); 
+	  
+	  return "myPage/MyPageUpdateForm"; 
+	}
+	
 
-	// 상품 정보 수정 : 수정된 데이터 DB에 저장
-
-//	@RequestMapping("/myPage/updateMyPage") public String updateMyPage(MemberVO
-//	  mem) { service.updateMyPage(mem); // 수정된 데이터 저장 후 상품 조회 화면으로 포워딩 return
-//	  "redirect:/myPage/info"; // -> 위에
-//	  있는 @RequestMapping("/product/productListAll") }
+	//회원 정보 수정 : 수정된 데이터 DB에 저장
+		@RequestMapping("/myPage/updateMyPage")
+		public String updateMyPage(MemberVO mem, Model model) {
+			
+			service.updateMyPage(mem);		
+            model.addAttribute("mem",mem);			
+			// 수정된 데이터 저장 후 회원 조회 화면으로 포워딩  
+			return "mainIndex";
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
