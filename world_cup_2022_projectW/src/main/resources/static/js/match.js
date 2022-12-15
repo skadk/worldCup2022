@@ -14,7 +14,6 @@ $(document).ready(function() {
 		var index = $(this).index();
 		
 		matchNo = index + 1;
-		console.log(matchNo);
 		
 		$('.mainBet').removeClass('show');
 		$('.tab-button').removeClass('active');
@@ -25,10 +24,8 @@ $(document).ready(function() {
 
 	// 가운데 트로피 클릭시 무승부 구간
 	$('.draw1').on('click', function() {
-		
 		nation1 = 1;
 		nation2 = 1;	
-	
 		$('.rightBet1').addClass('grayscale');
 		$('.leftBet1').addClass('grayscale');
 		$('.score1').addClass('on');
@@ -36,7 +33,7 @@ $(document).ready(function() {
 
 	$('.draw2').on('click', function() {
 		nation1 = 1;
-		nation2 = 1;	
+		nation2 = 1;
 		$('.rightBet2').addClass('grayscale');
 		$('.leftBet2').addClass('grayscale');
 		$('.score2').addClass('on');
@@ -56,7 +53,6 @@ $(document).ready(function() {
 	$('.resetBtn1').on('click', function() {
 		nation1 = 0;
 		nation2 = 0;
-	
 		$('.leftBet1').removeClass('grayscale');
 		$('.rightBet1').removeClass('grayscale');
 		$('.score1').removeClass('on');
@@ -80,19 +76,15 @@ $(document).ready(function() {
 
 	// 왼쪽 사진 or 오른쪽 사진 클릭시 블러 및 흑백 효과 적용 구간
 	$('.leftBet1').on('click', function() {
-		
 		nation1 = 2;
 		nation2 = 0;
-		
 		$('.leftBet1').removeClass('grayscale');
 		$('.rightBet1').addClass('grayscale');
 		$('.score1').addClass('on');
 	});
 	$('.rightBet1').on('click', function() {
-	
 		nation1 = 0;
 		nation2 = 2;
-		
 		$('.rightBet1').removeClass('grayscale');
 		$('.leftBet1').addClass('grayscale');
 		$('.score1').addClass('on');
@@ -135,8 +127,46 @@ $(document).ready(function() {
 			data:{"matchNo":matchNo,
 				  "matchNation1":nation1,
 				  "matchNation2":nation2},
-			success:function() {
+			dataType:"text",
+			success:function(percent1_1) {
 				alert("승부 예측 완료");
+				$(".percent1").text(percent1_1 + "%");
+			},
+			error:function() {
+				alert("로그인 하고 해주세요");
+				location.href="/member/login";
+			}
+		}); // ajax 종료
+	});
+	
+	$('#matchBtn').on('click', function() {
+		$.ajax({
+			type:"post",
+			url:"/match/percent2",
+			data:{"matchNo":matchNo,
+				  "matchNation1":nation1,
+				  "matchNation2":nation2},
+			dataType:"text",
+			success:function(percent2_1) {
+				$(".percent2").text(percent2_1 + "%");
+			},
+			error:function() {
+				alert("로그인 하고 해주세요");
+				location.href="/member/login";
+			}
+		}); // ajax 종료
+	});
+	
+	$('#matchBtn').on('click', function() {
+		$.ajax({
+			type:"post",
+			url:"/match/percent3",
+			data:{"matchNo":matchNo,
+				  "matchNation1":nation1,
+				  "matchNation2":nation2},
+			dataType:"text",
+			success:function(percent3_1) {
+				$(".percent3").text(percent3_1 + "%");
 			},
 			error:function() {
 				alert("로그인 하고 해주세요");

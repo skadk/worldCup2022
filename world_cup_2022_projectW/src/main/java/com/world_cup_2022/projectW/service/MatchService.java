@@ -23,6 +23,42 @@ public class MatchService implements IMatchService {
 	public void insertChoice(MatchVO vo) {
 		dao.insertChoice(vo);
 	}
+	
+	@Override
+	public int match1Percent1(int matchNo, int matchNation1) {
+		
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("matchNo", matchNo);
+		map.put("matchNation1", matchNation1);
+
+		int result = dao.match1Percent1(map);
+		
+		return result;
+	}
+	
+	@Override
+	public int match1Percent2(int matchNo, int matchNation1) {
+		
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("matchNo", matchNo);
+		map.put("matchNation1", matchNation1);
+		
+		int result = dao.match1Percent1(map);
+		
+		return result;
+	}
+	
+	@Override
+	public int match1Percent3(int matchNo, int matchNation1) {
+		
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("matchNo", matchNo);
+		map.put("matchNation1", matchNation1);
+		
+		int result = dao.match1Percent1(map);
+		
+		return result;
+	}
 
 	@Override
 	public int checkChoice(int matchNo, String memId) {

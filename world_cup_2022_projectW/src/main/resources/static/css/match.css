@@ -55,29 +55,32 @@
 
 .draw1 { /* 트로피를 누르면 무승부가 되기 위해 클릭 박스 생성 */
 	width: 250px;
-	height: 600px;
+	height: 15px;
 	top: 100px;
 	left: 840px;
 	position: absolute;
 	cursor: pointer;
+	padding-top: 635px;
 }
 
 .draw2 { /* 트로피를 누르면 무승부가 되기 위해 클릭 박스 생성 */
 	width: 300px;
-	height: 600px;
+	height: 15px;
 	top: 100px;
 	left: 810px;
 	position: absolute;
 	cursor: pointer;
+	padding-top: 635px;
 }
 
 .draw3 { /* 트로피를 누르면 무승부가 되기 위해 클릭 박스 생성 */
 	width: 300px;
-	height: 600px;
+	height: 15px;
 	top: 100px;
 	left: 810px;
 	position: absolute;
 	cursor: pointer;
+	padding-top: 635px;
 }
 
 .leftBet1 { /* mainBet1탭 안에서 왼쪽 팀 상자 */

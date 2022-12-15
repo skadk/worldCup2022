@@ -47,4 +47,10 @@ public class HomeController {
 		
 		return "menu/prize";
 	}
+	
+	@RequestMapping("/menu/admin/6767")
+	public String admin() {
+		
+		return "menu/admin";
+	}
 }
