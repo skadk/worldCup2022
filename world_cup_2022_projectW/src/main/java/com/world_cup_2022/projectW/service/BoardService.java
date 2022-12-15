@@ -1,5 +1,8 @@
 package com.world_cup_2022.projectW.service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -15,26 +18,23 @@ public class BoardService implements IBoardSerivce {
 	IBoardDAO dao;
 
 	@Override
-	public String insertBoard(BoardVO vo) {
-		// TODO Auto-generated method stub
-		return dao.insertBoard(vo);
-	}
-
-	@Override
-	public String deleteBoard(String memId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public MemberVO getMemberInfo(String memId) {
-		// TODO Auto-generated method stub
-		return dao.getMemberInfo(memId);
-	}
-
-	@Override
-	public BoardVO getBoardInfo(String boardNo) {
+	public void insertBoardText(String memId, String boardText) {
 		
-		return dao.getBoardInfo(boardNo);
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("memId", memId);
+		map.put("boardText", boardText);
+
+		dao.insertBoardText(map);
+//		String result = dao.selectBoardText(boardText);
+		
 	}
+
+	@Override
+	public ArrayList<BoardVO> boardView() {
+		
+		return dao.boardView();
+	}
+	
+	
+
 }
