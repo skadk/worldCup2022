@@ -15,16 +15,23 @@ import com.world_cup_2022.projectW.service.MyPageService;
 @Controller
 public class MyPageController {
 	@Autowired
-	 private MyPageService service;
-	
-	/* ----------------------------------*/
-	/* 회원정보보기 */
-	
-	// http://localhost:8080/myPage/detailViewMyPage/{memId}
-	@RequestMapping("/myPage/main")
-	public String index() {
+	private MyPageService service;
 
-		return "myPage/main";
+	/* ---------------------------------- */
+	/* 회원정보보기 */
+
+	// http://localhost:8080/myPage/detailViewMyPage/{memId}
+
+	@RequestMapping("/myPage/detailViewMyPage/{memId}")
+
+	public String detailViewMyPage(@PathVariable String memId, Model model) {
+
+	
+		
+		MemberVO mem = service.detailViewMyPage(memId);
+		model.addAttribute("mem", mem);
+
+		return "myPage/info";
 	}
 	
 	@RequestMapping("/myPage/detailViewMyPage/{memId}")
@@ -60,4 +67,29 @@ public class MyPageController {
 			session.invalidate();
 			return "redirect:/";
 		}
+	/* ---------------------------------- */
+	
+	/* 회원정보 수정 */
+
+	@RequestMapping("/myPage/updateMyPageForm/{memId}") 
+	public String updateMyPageForm(@PathVariable String memId, Model model) { 
+	  // 서비스에게 memId
+	  //전달하고 상품 정보 받아옴
+	  MemberVO mem = service.detailViewMyPage(memId);
+	  model.addAttribute("mem", mem); 
+	  
+	  return "myPage/MyPageUpdateForm"; 
+	}
+	
+
+	//회원 정보 수정 : 수정된 데이터 DB에 저장
+		@RequestMapping("/myPage/updateMyPage")
+		public String updateMyPage(MemberVO mem, Model model) {
+			
+			service.updateMyPage(mem);		
+            model.addAttribute("mem",mem);			
+			// 수정된 데이터 저장 후 회원 조회 화면으로 포워딩  
+			return "mainIndex";
+		}
 }
+

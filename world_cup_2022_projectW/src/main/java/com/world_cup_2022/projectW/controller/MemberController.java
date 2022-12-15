@@ -69,10 +69,12 @@ public class MemberController {
 	// 아이디 찾기 폼 이동
 	@RequestMapping("/member/findIdForm")
 	public String findIdForm() {
+		
 		return "member/findIdForm";
 	}
 	
 	// 아이디 찾기위해 이름 이메일 입력 확인
+	@ResponseBody
 	@RequestMapping("/member/findId")
 	public String findId(@RequestParam("findIdName") String memName,
 						 @RequestParam("findIdEmail") String memEmail,
@@ -81,12 +83,19 @@ public class MemberController {
 		String result = service.findId(memName, memEmail);
 		model.addAttribute("id", result);
 		
-		return "member/login";
+		if (result != null) {
+			return result;
+		} else {
+			result = "fail";
+			return result;			
+		}
+		
 	}
 
 	// 비밀번호 찾기 폼 이동
 	@RequestMapping("/member/findPwdForm")
 	public String findPwdForm() {
+		
 		return "member/findPwdForm";
 	}
 	

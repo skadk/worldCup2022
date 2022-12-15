@@ -8,7 +8,8 @@
 		<title>아이디 찾기</title>
 		<!-- head -->
 		<c:import url="/WEB-INF/views/layout/head.jsp"/>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/findId.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/findidpwd.css'/>">
+		<script src="<c:url value='/js/findIdForm.js'/>"></script>
 	</head>
 	<body>
 	<div id="wrap">
@@ -16,7 +17,7 @@
 		<c:import url="/WEB-INF/views/layout/top.jsp"/>
 		<div class="findbox">
 			<div id="findId">
-				<form method="post" action="/member/findId">
+				<form id="findIdForm" name="findIdForm">
 					<h1>아이디 찾기</h1>
 						
 					<h4>이름</h4>
@@ -26,6 +27,7 @@
 					<h4>이메일</h4>
 					<span class="input_area"><input type="text" maxlength="30" id="findIdEmail" name="findIdEmail" 
 					placeholder="이메일을 입력해 주세요." required></span>
+					
 					<button type="submit">찾기</button>
 					<button type="button" onClick="history.back()">취소</button>
 				</form>

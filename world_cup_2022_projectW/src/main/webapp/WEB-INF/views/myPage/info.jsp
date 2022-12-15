@@ -7,21 +7,17 @@
 		<meta charset="UTF-8">
 		<title>상품 상세 조회</title>
 		<c:import url="/WEB-INF/views/layout/head.jsp" />
-	
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/info.css'/>">
 	</head>
 	<body>
-
 		<div id="wrap">
 			<!--  top -->         
         	<c:import url="/WEB-INF/views/layout/top.jsp" />
-			
 			<h3>회원정보조회</h3>
 			<br><br>
-			<form method="post" action="<c:url value='/myPage/info'/>">
+			<form method="post">
 			<table border="1" width="800">
-					<tr><td rowspan="9"></td></tr>
-					<tr><td>회원아이디</td>
-					<td><input type="hidden" name="memId" value="${mem.memId}">${mem.memId}</td></tr>
+					<tr><td>회원아이디</td><td>${mem.memId}</td></tr>
 					<tr><td>회원이름 </td><td>${mem.memName } </td></tr>
 					<tr><td>회원전화번호  </td><td>${mem.memHP }</td></tr>
 					<tr><td>회원이메일</td><td>${mem.memEmail } </td></tr>
@@ -33,6 +29,8 @@
 					<input type="button" value="회원정보수정" class="btn" onclick="location.href='/myPage/updateForm'">
 					<input type="button" value="로그아웃" class="btn" onclick="location.href='/member/logout'">
 					<input type="button" value="회원탈퇴" class="btn" onclick="location.href='/myPage/myPageDeleteView'">
+					<a href="<c:url value='/myPage/updateMyPageForm/${mem.memId}'/>"><input type="button" value="회원정보수정" class="btn"></a>
+					<input type="button" value="회원탈퇴" class="btn" onclick="location.href='/myPage/deleteForm'">
 				<br><br>
 				</form>
 				
