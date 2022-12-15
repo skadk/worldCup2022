@@ -21,6 +21,10 @@
 			movedIndex = movedIndex - 1; // 인덱스 값 - 1
 		
 		moveSlide(movedIndex);  // 실제로 슬라이드 패널을 움직이는 함수 호출하면 계산된 인덱스값 전달
+		
+		$('.controlButton').attr('src', '/image/controlButton1.png');
+		
+		$('.controlButton').eq(movedIndex).attr('src', '/image/controlButton2.png');
 	});	
 	
 	// next 버튼 클릭하면 뒤로 이동
@@ -29,6 +33,10 @@
 			movedIndex = movedIndex + 1; // 인덱스 값 + 1
 		
 		moveSlide(movedIndex); // 실제로 슬라이드 패널을 움직이는 함수 호출하면 계산된 인덱스값 전달
+		
+		$('.controlButton').attr('src', '/image/controlButton1.png');
+		
+		$('.controlButton').eq(movedIndex).attr('src', '/image/controlButton2.png');
 	});
 	
 	// 초기 슬라이더 위치 랜덤하게 지정
