@@ -18,7 +18,7 @@
 	<c:import url="/WEB-INF/views/layout/top.jsp"/>
 		<form id="pointForm" method="post" action="<c:url value='/myPage/pointList'/>">
 			<h1>포인트 변경 내역</h1>
-			<hr>
+			<br>
 			<table border="1" width="1000">
 				<tr background-color="skyblue">
 					<th>포인트 변경 내역 번호</th>
