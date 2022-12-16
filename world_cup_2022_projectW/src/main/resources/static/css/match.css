@@ -5,6 +5,11 @@
 /* matchHeaderBox */
 
 /* 경기별 탭 상자 */
+#matchBtnCSS {
+	height: 100px;
+}
+
+
 .mainBet {
 	position: relative;
 	display: none;
@@ -43,7 +48,7 @@
 }
 
 .resetBtn1 { /* 초기화 버튼 */
-	opacity: 0.9;
+	opacity: 1;
 }
 
 .resetBtn2 {
@@ -51,7 +56,7 @@
 }
 
 .resetBtn3 {
-	opacity: 0.8;
+	opacity: 1;
 }
 
 .draw1 { /* 트로피를 누르면 무승부가 되기 위해 클릭 박스 생성 */
@@ -184,6 +189,7 @@
 /* common */
 #wrap {
 	width: 1920px;
+	height: 1200px;
 	text-align: center;
 	position: relative;
 }
@@ -209,18 +215,28 @@ body {
 /* ===================================================== */
 /* Menu */
 #matchTitleBox {
-	width:300px;
-	background-color: white;
+	width:700px;
+}
+
+#matchTitleBox img {
+	padding: 20px;
+	margin-top:20px;
+	border: 10px dashed black;
+	border-radius: 50px;
+	background-color:white;
+}
+
+#matchTitleBox img:hover {
+    filter: invert(100%);
 }
 
 #matchHeaderBox { /* header 텍스트 박스 */
 	width: 1280px;
-	height: 30px;
-	line-height: 30px;
+	height: 300px;
 	padding: 0;
 	background-color: #005;
 	position: relative;
-	z-index:30;
+	z-index:10;
 }
 
 #matchHeaderBox div { /* header 박스 안의 text */
@@ -266,15 +282,16 @@ body {
 }
 
 .Btn {
-	width:100%;
-	height:12%;
-	border:1px solid white;
+	width:150px;
+	height:50px;
+	border:2px solid white;
 	background-color:skyblue;
 	color:white;
 	padding:5px;
-	margin-top:10px;
-	border-radius: 10px;
+	margin-top:30px;
+	border-radius:10px;
 	font-weight:bold;
+	font-size: 20px;
 }
 
 .Btn:hover {
@@ -282,19 +299,17 @@ body {
 	background-color:white;
 }
 
-.matchBtn {
+/* #matchBtn {
 	width:100px;
 	height:26px;
 	border:1px solid red;
-	background-color:rgba(0,0,0,0);
-	color:red;
-	
-	
+	background-color: red;
+	color:white;
 	border-radius: 10px;
 	font-weight:bold;
-}
+} */
 
-.matchBtn:hover {
+#matchBtn:hover {
 	color:white;
-	background-color:black;
+	background-color:whidte;
 }

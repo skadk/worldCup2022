@@ -16,12 +16,10 @@
 			<!-- top -->
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
 			<div id="matchHeaderBox">
-<%-- 				<div id="matchTitleBox">
-					<img src="<c:url value='/image/승부예측2.png'/>">				
-				</div> --%>
-				<div>
-					승부 예측
-					<button id="matchBtn" class="matchBtn">승부예측완료</button>
+				<div id="matchBtnCSS">
+					<div id="matchTitleBox">
+						<img id="matchBtn" src="<c:url value='/image/승부예측7.png'/>">				
+					</div>
 				</div>
 			</div>
 			<div id="mainTabBox">
@@ -45,15 +43,13 @@
 			</div>
 			<div id='mainBetContainer'>
 				<div class='mainBet show'>
-					<img src="<c:url value="/image/background.jpg"/>" width='1280' height='840'>
+					<img src="<c:url value="/image/background.jpg"/>" width='1280' height='1000'>
 					<div class='draw1'>
 						<b class='score1 percent2' id="percent2" name="percent2"></b>
+						<button class='resetBtn1 Btn'>선택 초기화</button>
 					</div>
 					<div class='drawtext'>
 						트로피 선택 시 무승부
-					</div>
-					<div class='reset'>
-						<button class='resetBtn1 Btn'>초기화</button>
 					</div>
 					<div class='leftBet1'>
 						<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br>
@@ -73,9 +69,9 @@
 				<img src="<c:url value="/image/background.jpg"/>" width='1280' height='840'>
 				<div class='draw2'>
 						<b class='score2 percent2' id="percent2" name="percent2"></b>
+						<button class='resetBtn2 Btn'>선택 초기화</button>
 				</div>
 				<div class='drawtext'>트로피 선택 시 무승부</div>
-				<div class='reset'><button class='resetBtn2 Btn'>초기화</button></div>
 				
 				<div class='leftBet2'>
 					<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br> 
@@ -94,10 +90,10 @@
 			<div class='mainBet'>
 				<img src="<c:url value="/image/background.jpg"/>" width='1280' height='840'>
 				<div class='draw3'>
-						<b class='score3 percent2' id="percent2" name="percent2"></b>
+					<b class='score3 percent2' id="percent2" name="percent2"></b>
+					<button class='resetBtn3 Btn'>선택 초기화</button>
 				</div>
 				<div class='drawtext'>트로피 선택 시 무승부</div>
-				<div class='reset'><button class='resetBtn3 Btn'>초기화</button></div>
 				
 				<div class='leftBet3'>
 					<img src="<c:url value="/image/KoreaPlayer.jpg"/>" width='350' height='550'><br>
