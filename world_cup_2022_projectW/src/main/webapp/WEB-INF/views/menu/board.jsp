@@ -17,8 +17,10 @@
 	<c:import url="/WEB-INF/views/layout/top.jsp"/>
 		<form id="boardForm" method="post" action="<c:url value='/menu/boardList'/>">
 			<h1>응원 해조</h1>
+			<br>
 			<hr>
-			<input type="text" maxlength="100" id="boardText" name="boardText">
+			<br>
+			<input type="text" maxlength="100" size="60" id="boardText" name="boardText">
 		 	<input id="button" type="submit" value="등록"><br><br>
 			<table border="1" width="1000">
 				<tr>
