@@ -16,6 +16,9 @@
 			<!-- top -->
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
 			<div id="matchHeaderBox">
+<%-- 				<div id="matchTitleBox">
+					<img src="<c:url value='/image/승부예측2.png'/>">				
+				</div> --%>
 				<div>
 					승부 예측
 					<button id="matchBtn" class="matchBtn">승부예측완료</button>
