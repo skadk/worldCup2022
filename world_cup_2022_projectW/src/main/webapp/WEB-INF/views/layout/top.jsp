@@ -12,19 +12,18 @@
 						<a href="<c:url value='/member/signUp'/>">회원가입</a>
 					</c:if>
 					<c:if test="${not empty sessionScope.sid }">
+						<a href="<c:url value='/member/logout'/>">로그아웃</a>
+						<a href="<c:url value='/myPage/detailViewMyPage/${sessionScope.sid}'/>">마이 페이지</a><br>
 						${sessionScope.sid}님 환영합니다!
-						<a href="<c:url value='/member/logout'/>">로그아웃</a><br>
-						<a href="<c:url value='/myPage/detailViewMyPage/${sessionScope.sid}'/>">마이 페이지</a>
-						<a href="<c:url value='/member/cart'/>">장바구니</a>
 					</c:if>
 				</div>
 				<div id="mainMenuBox">
 					<div id="mainMenuItem">
 						<p><a href="<c:url value='/menu/korTeam'/>">한국대표팀 소개</a></p>
 						<p><a href="<c:url value='/menu/cheerWall'/>">응원 담벼락</a></p>
+						<p><a href="<c:url value='/menu/board'/>">응원 해조</a></p>
 						<p><a href="<c:url value='/menu/match'/>">승부 예측</a></p>
 						<p><a href="<c:url value='/menu/prize'/>">경품 응모</a></p>
-						<p><a href="<c:url value='/menu/board'/>">게시판</a></p>
 					</div>
 				</div>
 			</div>
