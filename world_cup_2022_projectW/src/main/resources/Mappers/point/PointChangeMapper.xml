@@ -15,7 +15,7 @@
   	
   	<select id="pointView" resultMap="ptResult">
   		SELECT *
-  		FROM point_change ORDER BY pointChangeNo DESC
+  		FROM point_change
+  		where memId=#{memId}
   	</select>
-  	
   </mapper>
