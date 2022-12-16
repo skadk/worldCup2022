@@ -32,8 +32,8 @@
 		DELETE FROM match_game WHERE memId=#{result};
 		DELETE FROM point_all WHERE memId=#{result};
 		DELETE FROM point_change WHERE memId=#{result};
-		DELETE FROM member WHERE memId=#{result};
 		DELETE FROM board where memId=#{result};
+		DELETE FROM member WHERE memId=#{result};
 	</delete>
 	
 </mapper>
