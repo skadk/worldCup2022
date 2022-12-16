@@ -84,13 +84,13 @@ public class MyPageController {
 	}
 	
 	@RequestMapping("/myPage/MyPagePointChange")
-	public String point(HttpSession session, Model model) {
+	public String point(Model model) {
 		
-		String memId = (String)session.getAttribute("sid");
-		
-		ArrayList<PointChangeVO> ptList = pcservice.pointView(memId);
+		ArrayList<PointChangeVO> ptList = pcservice.pointView();
 		model.addAttribute("ptList", ptList);
 		
 		return "myPage/MyPagePointChange";
 	}
+
+	
 }
