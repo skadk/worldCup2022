@@ -18,6 +18,7 @@
 				<div id="miniwrap">
 					<h2 id="text">관리자 페이지 입니다.</h2> <br>
 					<button id="pointBtn" class="prdBtn">포인트 지급</button>
+					sdfasdfasdfsfasd
 				</div>
 			<!-- bottom -->
        		<c:import url="/WEB-INF/views/layout/bottom.jsp"/>
