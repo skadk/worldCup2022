@@ -20,7 +20,7 @@
 			<hr>
 			<input type="text" maxlength="100" id="boardText" name="boardText">
 		 	<input id="button" type="submit" value="등록"><br><br>
-			<table border="1" width="800">
+			<table border="1" width="1000">
 				<tr>
 					<th>게시글 번호</th>
 					<th>작성자</th>

@@ -6,10 +6,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>포인트 사용 내역</title>
+		<title>포인트 변경 내역</title>
 		<!-- head -->
 		<c:import url="/WEB-INF/views/layout/head.jsp"/>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/board.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/pointchange.css'/>">
 		
 	</head>
 	<body>
@@ -17,10 +17,10 @@
 	<!-- top -->
 	<c:import url="/WEB-INF/views/layout/top.jsp"/>
 		<form id="pointForm" method="post" action="<c:url value='/myPage/pointList'/>">
-			<h1>응원 해조</h1>
+			<h1>포인트 변경 내역</h1>
 			<hr>
-			<table border="1" width="800">
-				<tr>
+			<table border="1" width="1000">
+				<tr background-color="skyblue">
 					<th>포인트 변경 내역 번호</th>
 					<th>사용자</th>
 					<th>포인트 추가</th>
