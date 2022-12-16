@@ -16,9 +16,9 @@ public class PointChangeService implements IPointChangeService {
 	IPointChangeDAO dao;
 	
 	@Override
-	public ArrayList<PointChangeVO> pointView() {
+	public ArrayList<PointChangeVO> pointView(String memId) {
 		
-		return dao.pointView();
+		return dao.pointView(memId);
 	}
 
 }
